@@ -1,0 +1,259 @@
+diff --git a/core/lib/Drupal/Core/Entity/EntityReferenceSelection/SelectionTrait.php b/core/lib/Drupal/Core/Entity/EntityReferenceSelection/SelectionTrait.php
+deleted file mode 100644
+index 1d7947d..0000000
+--- a/core/lib/Drupal/Core/Entity/EntityReferenceSelection/SelectionTrait.php
++++ /dev/null
+@@ -1,74 +0,0 @@
+-<?php
+-
+-namespace Drupal\Core\Entity\EntityReferenceSelection;
+-
+-use Drupal\Core\Entity\EntityManagerInterface;
+-use Drupal\Core\Extension\ModuleHandlerInterface;
+-use Drupal\Core\Session\AccountInterface;
+-use Symfony\Component\DependencyInjection\ContainerInterface;
+-
+-/**
+- * Provides common methods and injects services for core selection handlers.
+- */
+-trait SelectionTrait {
+-
+-  /**
+-   * The entity manager service.
+-   *
+-   * @var \Drupal\Core\Entity\EntityManagerInterface
+-   */
+-  protected $entityManager;
+-
+-  /**
+-   * The module handler service.
+-   *
+-   * @var \Drupal\Core\Extension\ModuleHandlerInterface
+-   */
+-  protected $moduleHandler;
+-
+-  /**
+-   * The current user.
+-   *
+-   * @var \Drupal\Core\Session\AccountInterface
+-   */
+-  protected $currentUser;
+-
+-  /**
+-   * Constructs a new selection object.
+-   *
+-   * @param array $configuration
+-   *   A configuration array containing information about the plugin instance.
+-   * @param string $plugin_id
+-   *   The plugin_id for the plugin instance.
+-   * @param mixed $plugin_definition
+-   *   The plugin implementation definition.
+-   * @param \Drupal\Core\Entity\EntityManagerInterface $entity_manager
+-   *   The entity manager service.
+-   * @param \Drupal\Core\Extension\ModuleHandlerInterface $module_handler
+-   *   The module handler service.
+-   * @param \Drupal\Core\Session\AccountInterface $current_user
+-   *   The current user.
+-   */
+-  public function __construct(array $configuration, $plugin_id, $plugin_definition, EntityManagerInterface $entity_manager, ModuleHandlerInterface $module_handler, AccountInterface $current_user) {
+-    parent::__construct($configuration, $plugin_id, $plugin_definition);
+-
+-    $this->entityManager = $entity_manager;
+-    $this->moduleHandler = $module_handler;
+-    $this->currentUser = $current_user;
+-  }
+-
+-  /**
+-   * {@inheritdoc}
+-   */
+-  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
+-    return new static(
+-      $configuration,
+-      $plugin_id,
+-      $plugin_definition,
+-      $container->get('entity.manager'),
+-      $container->get('module_handler'),
+-      $container->get('current_user')
+-    );
+-  }
+-
+-}
+diff --git a/core/lib/Drupal/Core/Entity/Plugin/EntityReferenceSelection/DefaultSelection.php b/core/lib/Drupal/Core/Entity/Plugin/EntityReferenceSelection/DefaultSelection.php
+index 218131c..32f4072 100644
+--- a/core/lib/Drupal/Core/Entity/Plugin/EntityReferenceSelection/DefaultSelection.php
++++ b/core/lib/Drupal/Core/Entity/Plugin/EntityReferenceSelection/DefaultSelection.php
+@@ -6,7 +6,6 @@
+ use Drupal\Core\Database\Query\AlterableInterface;
+ use Drupal\Core\Entity\EntityManagerInterface;
+ use Drupal\Core\Entity\EntityReferenceSelection\SelectionPluginBase;
+-use Drupal\Core\Entity\EntityReferenceSelection\SelectionTrait;
+ use Drupal\Core\Entity\EntityReferenceSelection\SelectionWithAutocreateInterface;
+ use Drupal\Core\Entity\FieldableEntityInterface;
+ use Drupal\Core\Extension\ModuleHandlerInterface;
+@@ -15,6 +14,7 @@
+ use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
+ use Drupal\Core\Session\AccountInterface;
+ use Drupal\user\EntityOwnerInterface;
++use Symfony\Component\DependencyInjection\ContainerInterface;
+ 
+ /**
+  * Default plugin implementation of the Entity Reference Selection plugin.
+@@ -38,19 +38,63 @@
+  */
+ class DefaultSelection extends SelectionPluginBase implements ContainerFactoryPluginInterface, SelectionWithAutocreateInterface {
+ 
+-  use SelectionTrait {
+-    // PHP 5.5.9 gets confused between SelectionPluginBase::__construct() and
+-    // SelectionTrait::__construct() that's why we are renaming the
+-    // SelectionTrait::__construct() to avoid the confusion.
+-    // @todo Remove this in https://www.drupal.org/node/2670966.
+-    SelectionTrait::__construct as private initialize;
++  /**
++   * The entity manager service.
++   *
++   * @var \Drupal\Core\Entity\EntityManagerInterface
++   */
++  protected $entityManager;
++
++  /**
++   * The module handler service.
++   *
++   * @var \Drupal\Core\Extension\ModuleHandlerInterface
++   */
++  protected $moduleHandler;
++
++  /**
++   * The current user.
++   *
++   * @var \Drupal\Core\Session\AccountInterface
++   */
++  protected $currentUser;
++
++  /**
++   * Constructs a new selection object.
++   *
++   * @param array $configuration
++   *   A configuration array containing information about the plugin instance.
++   * @param string $plugin_id
++   *   The plugin_id for the plugin instance.
++   * @param mixed $plugin_definition
++   *   The plugin implementation definition.
++   * @param \Drupal\Core\Entity\EntityManagerInterface $entity_manager
++   *   The entity manager service.
++   * @param \Drupal\Core\Extension\ModuleHandlerInterface $module_handler
++   *   The module handler service.
++   * @param \Drupal\Core\Session\AccountInterface $current_user
++   *   The current user.
++   */
++  public function __construct(array $configuration, $plugin_id, $plugin_definition, EntityManagerInterface $entity_manager, ModuleHandlerInterface $module_handler, AccountInterface $current_user) {
++    parent::__construct($configuration, $plugin_id, $plugin_definition);
++
++    $this->entityManager = $entity_manager;
++    $this->moduleHandler = $module_handler;
++    $this->currentUser = $current_user;
+   }
+ 
+   /**
+    * {@inheritdoc}
+    */
+-  public function __construct(array $configuration, $plugin_id, $plugin_definition, EntityManagerInterface $entity_manager, ModuleHandlerInterface $module_handler, AccountInterface $current_user) {
+-    $this->initialize($configuration, $plugin_id, $plugin_definition, $entity_manager, $module_handler, $current_user);
++  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
++    return new static(
++      $configuration,
++      $plugin_id,
++      $plugin_definition,
++      $container->get('entity.manager'),
++      $container->get('module_handler'),
++      $container->get('current_user')
++    );
+   }
+ 
+   /**
+diff --git a/core/modules/views/src/Plugin/EntityReferenceSelection/ViewsSelection.php b/core/modules/views/src/Plugin/EntityReferenceSelection/ViewsSelection.php
+index 9911f61..138eb16 100644
+--- a/core/modules/views/src/Plugin/EntityReferenceSelection/ViewsSelection.php
++++ b/core/modules/views/src/Plugin/EntityReferenceSelection/ViewsSelection.php
+@@ -2,12 +2,15 @@
+ 
+ namespace Drupal\views\Plugin\EntityReferenceSelection;
+ 
++use Drupal\Core\Entity\EntityManagerInterface;
+ use Drupal\Core\Entity\EntityReferenceSelection\SelectionPluginBase;
+-use Drupal\Core\Entity\EntityReferenceSelection\SelectionTrait;
++use Drupal\Core\Extension\ModuleHandlerInterface;
+ use Drupal\Core\Form\FormStateInterface;
+ use Drupal\Core\Plugin\ContainerFactoryPluginInterface;
++use Drupal\Core\Session\AccountInterface;
+ use Drupal\Core\Url;
+ use Drupal\views\Views;
++use Symfony\Component\DependencyInjection\ContainerInterface;
+ 
+ /**
+  * Plugin implementation of the 'selection' entity_reference.
+@@ -21,7 +24,64 @@
+  */
+ class ViewsSelection extends SelectionPluginBase implements ContainerFactoryPluginInterface {
+ 
+-  use SelectionTrait;
++  /**
++   * The entity manager service.
++   *
++   * @var \Drupal\Core\Entity\EntityManagerInterface
++   */
++  protected $entityManager;
++
++  /**
++   * The module handler service.
++   *
++   * @var \Drupal\Core\Extension\ModuleHandlerInterface
++   */
++  protected $moduleHandler;
++
++  /**
++   * The current user.
++   *
++   * @var \Drupal\Core\Session\AccountInterface
++   */
++  protected $currentUser;
++
++  /**
++   * Constructs a new selection object.
++   *
++   * @param array $configuration
++   *   A configuration array containing information about the plugin instance.
++   * @param string $plugin_id
++   *   The plugin_id for the plugin instance.
++   * @param mixed $plugin_definition
++   *   The plugin implementation definition.
++   * @param \Drupal\Core\Entity\EntityManagerInterface $entity_manager
++   *   The entity manager service.
++   * @param \Drupal\Core\Extension\ModuleHandlerInterface $module_handler
++   *   The module handler service.
++   * @param \Drupal\Core\Session\AccountInterface $current_user
++   *   The current user.
++   */
++  public function __construct(array $configuration, $plugin_id, $plugin_definition, EntityManagerInterface $entity_manager, ModuleHandlerInterface $module_handler, AccountInterface $current_user) {
++    parent::__construct($configuration, $plugin_id, $plugin_definition);
++
++    $this->entityManager = $entity_manager;
++    $this->moduleHandler = $module_handler;
++    $this->currentUser = $current_user;
++  }
++
++  /**
++   * {@inheritdoc}
++   */
++  public static function create(ContainerInterface $container, array $configuration, $plugin_id, $plugin_definition) {
++    return new static(
++      $configuration,
++      $plugin_id,
++      $plugin_definition,
++      $container->get('entity.manager'),
++      $container->get('module_handler'),
++      $container->get('current_user')
++    );
++  }
+ 
+   /**
+    * The loaded View object.
