@@ -25,6 +25,7 @@
         "drupal/console": "^1.0",
         "drupal/core": "~8.0",
         "drupal/features": "^3.5",
+        "drupal/schema": "1.x-dev",
         "drush/drush": "~8.0|^9.0.0-beta7",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"

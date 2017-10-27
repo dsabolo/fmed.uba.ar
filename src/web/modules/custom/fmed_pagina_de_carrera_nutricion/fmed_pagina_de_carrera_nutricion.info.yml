@@ -1,0 +1,13 @@
+name: 'Pagina de carrera nutricion'
+description: 'Provides Pagina de carrera nutricion tipo de contenido and related configuration. '
+type: module
+core: 8.x
+dependencies:
+  - field
+  - language
+  - menu_ui
+  - node
+  - path
+  - text
+  - user
+package: FMED

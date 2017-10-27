@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+id: pu
+label: 'Pulblicador de contenidos kinesiología'
+weight: 4
+is_admin: null

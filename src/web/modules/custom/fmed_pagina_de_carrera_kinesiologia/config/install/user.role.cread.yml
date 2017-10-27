@@ -1,0 +1,7 @@
+langcode: es
+status: true
+dependencies: {  }
+id: cread
+label: 'Creador contenidos kinesiología'
+weight: 3
+is_admin: null
