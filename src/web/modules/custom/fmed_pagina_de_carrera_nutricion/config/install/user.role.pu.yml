@@ -1,7 +1,0 @@
-langcode: es
-status: true
-dependencies: {  }
-id: pu
-label: 'Pulblicador de contenidos nutricion'
-weight: 4
-is_admin: null
