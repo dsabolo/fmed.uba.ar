@@ -1,0 +1,20 @@
+uuid: 72dfb8f4-ba98-4a76-b926-6bffc9a6e5d8
+langcode: es
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - user
+id: user.field_acceso_a_carreras
+field_name: field_acceso_a_carreras
+entity_type: user
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

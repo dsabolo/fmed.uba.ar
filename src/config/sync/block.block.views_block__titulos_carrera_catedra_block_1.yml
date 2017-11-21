@@ -1,0 +1,34 @@
+uuid: 75ac1c9f-66d5-4fb6-9aba-74bf2aa6166d
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.titulos_carrera_catedra
+  module:
+    - node
+    - views
+  theme:
+    - bootstrap_business
+id: views_block__titulos_carrera_catedra_block_1
+theme: bootstrap_business
+region: highlighted
+weight: -6
+provider: null
+plugin: 'views_block:titulos_carrera_catedra-block_1'
+settings:
+  id: 'views_block:titulos_carrera_catedra-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      pagina_de_carrera_: pagina_de_carrera_
+      pagina_de_catedra: pagina_de_catedra
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

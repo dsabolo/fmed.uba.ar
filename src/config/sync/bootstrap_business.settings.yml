@@ -1,0 +1,15 @@
+scrolltop_display: 1
+_core:
+  default_config_hash: 3TvjzJbLpvlssNHSPJXdgdLY7btOE0A55FMlDO1PzR0
+langcode: es
+features:
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+logo:
+  use_default: false
+  path: 'public://logo_medicina.png'
+favicon:
+  use_default: true
+scrolltop: ''

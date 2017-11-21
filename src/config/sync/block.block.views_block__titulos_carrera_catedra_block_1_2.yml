@@ -1,0 +1,34 @@
+uuid: 84e6c022-8b6a-44b0-90ac-4e1fb0d63a1f
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.titulos_carrera_catedra
+  module:
+    - node
+    - views
+  theme:
+    - newsplus_lite
+id: views_block__titulos_carrera_catedra_block_1_2
+theme: newsplus_lite
+region: page_intro
+weight: -3
+provider: null
+plugin: 'views_block:titulos_carrera_catedra-block_1'
+settings:
+  id: 'views_block:titulos_carrera_catedra-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+  context_mapping: {  }
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      pagina_de_carrera_: pagina_de_carrera_
+      pagina_de_catedra: pagina_de_catedra
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

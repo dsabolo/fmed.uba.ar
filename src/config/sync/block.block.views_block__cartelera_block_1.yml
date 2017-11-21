@@ -1,0 +1,33 @@
+uuid: 78af1b9f-716e-4563-8bae-351e6401aa27
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.cartelera
+  module:
+    - node
+    - views
+  theme:
+    - newsplus_lite
+id: views_block__cartelera_block_1
+theme: newsplus_lite
+region: sidebar_second
+weight: -6
+provider: null
+plugin: 'views_block:cartelera-block_1'
+settings:
+  id: 'views_block:cartelera-block_1'
+  label: Cartelera
+  provider: views
+  label_display: visible
+  views_label: Cartelera
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      pagina_de_carrera_: pagina_de_carrera_
+      pagina_de_catedra: pagina_de_catedra
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

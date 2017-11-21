@@ -1,0 +1,25 @@
+uuid: 6d1b8142-a17b-4310-a27e-49423cc6dc1e
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:3db193a8-b08f-4dc5-ba32-1ba31b2069ca'
+  module:
+    - block_content
+  theme:
+    - newsplus_lite
+id: logospie
+theme: newsplus_lite
+region: sub_footer_left
+weight: 0
+provider: null
+plugin: 'block_content:3db193a8-b08f-4dc5-ba32-1ba31b2069ca'
+settings:
+  id: 'block_content:3db193a8-b08f-4dc5-ba32-1ba31b2069ca'
+  label: 'Logos Pie'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

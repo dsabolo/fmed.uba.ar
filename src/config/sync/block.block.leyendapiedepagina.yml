@@ -1,0 +1,25 @@
+uuid: a49cbf23-3e35-480d-a403-c7115bcb87d6
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:e9c6ecf2-4290-49e8-9b90-edc999b41921'
+  module:
+    - block_content
+  theme:
+    - newsplus_lite
+id: leyendapiedepagina
+theme: newsplus_lite
+region: footer
+weight: 0
+provider: null
+plugin: 'block_content:e9c6ecf2-4290-49e8-9b90-edc999b41921'
+settings:
+  id: 'block_content:e9c6ecf2-4290-49e8-9b90-edc999b41921'
+  label: 'Leyenda pié de página'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

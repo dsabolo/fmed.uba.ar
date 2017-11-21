@@ -1,0 +1,14 @@
+uuid: 4db64f6c-1e8a-493e-b128-1869c2b60805
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.pu
+  module:
+    - user
+id: user_remove_role_action.pu
+label: 'Remove the Pulblicador de contenidos kinesiología role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: pu

@@ -1,0 +1,20 @@
+uuid: ad28e79e-4162-498b-889d-3edc4a111753
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_orden
+field_name: field_orden
+entity_type: node
+type: integer
+settings:
+  unsigned: false
+  size: normal
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

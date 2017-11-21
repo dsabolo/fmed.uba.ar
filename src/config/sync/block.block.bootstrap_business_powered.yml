@@ -1,0 +1,22 @@
+uuid: 051c4b8e-73c2-4f5a-ad69-ecf40f5dedaf
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - bootstrap_business
+_core:
+  default_config_hash: jQQUUWN2Uxr5qZtc9zcJKBCxpKY8orN1u2HPqYYRQDI
+id: bootstrap_business_powered
+theme: bootstrap_business
+region: pre_header_first
+weight: -7
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Funciona con Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

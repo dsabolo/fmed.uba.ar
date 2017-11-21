@@ -1,0 +1,20 @@
+uuid: 4637f154-6cb9-4da0-8859-dab25eca82c7
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - newsplus_lite
+id: poweredbydrupal
+theme: newsplus_lite
+region: sidebar_second
+weight: -4
+provider: null
+plugin: system_powered_by_block
+settings:
+  id: system_powered_by_block
+  label: 'Powered by Drupal'
+  provider: system
+  label_display: '0'
+visibility: {  }

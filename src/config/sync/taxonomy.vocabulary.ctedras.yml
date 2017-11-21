@@ -1,0 +1,9 @@
+uuid: caa43309-8fa7-45bb-a0e7-d0ea11dd80c5
+langcode: es
+status: true
+dependencies: {  }
+name: Cátedras
+vid: ctedras
+description: ''
+hierarchy: 0
+weight: 0

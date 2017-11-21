@@ -1,0 +1,22 @@
+uuid: 7fc682c0-138f-4ee2-a7c3-4cd0df3e13d2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.publicaciones_cartelera
+  module:
+    - text
+id: node.publicaciones_cartelera.body
+field_name: body
+entity_type: node
+bundle: publicaciones_cartelera
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

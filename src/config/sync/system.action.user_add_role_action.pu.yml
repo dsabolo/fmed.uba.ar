@@ -1,0 +1,14 @@
+uuid: ac5b8d9e-a436-45c7-b54f-f049988bf892
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.pu
+  module:
+    - user
+id: user_add_role_action.pu
+label: 'Add the Pulblicador de contenidos kinesiología role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: pu

@@ -1,0 +1,18 @@
+uuid: 75888d9b-860d-4ea6-bfe8-399607d904a3
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: tJv2vdMGI0K0oB_w9VCeU9aZv81sjgIOTAzEi7Lu9K4
+id: cread
+label: 'Creador contenidos kinesiología'
+weight: 3
+is_admin: null
+permissions:
+  - 'create pagina_de_carrera_kinesiologia content'
+  - 'delete own pagina_de_carrera_kinesiologia content'
+  - 'edit any pagina_de_carrera_kinesiologia content'
+  - 'edit own pagina_de_carrera_kinesiologia content'
+  - 'use editorial transition create_new_draft'
+  - 'view any unpublished content'
+  - 'view latest version'

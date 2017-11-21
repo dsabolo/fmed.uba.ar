@@ -1,0 +1,20 @@
+uuid: 6f31b838-e484-4255-971d-28d257c554c8
+langcode: es
+status: true
+dependencies:
+  module:
+    - user
+  theme:
+    - newsplus_lite
+id: userlogin
+theme: newsplus_lite
+region: sidebar_second
+weight: -5
+provider: null
+plugin: user_login_block
+settings:
+  id: user_login_block
+  label: Ingresar
+  provider: user
+  label_display: visible
+visibility: {  }

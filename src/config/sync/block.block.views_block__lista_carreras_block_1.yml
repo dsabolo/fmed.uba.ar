@@ -1,0 +1,24 @@
+uuid: d25d79d4-4e07-40d9-a104-a1763cca20bb
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.lista_carreras
+  module:
+    - views
+  theme:
+    - newsplus_lite
+id: views_block__lista_carreras_block_1
+theme: newsplus_lite
+region: footer_first
+weight: -6
+provider: null
+plugin: 'views_block:lista_carreras-block_1'
+settings:
+  id: 'views_block:lista_carreras-block_1'
+  label: 'Carreras de la Facultad'
+  provider: views
+  label_display: visible
+  views_label: 'Carreras de la Facultad'
+  items_per_page: none
+visibility: {  }

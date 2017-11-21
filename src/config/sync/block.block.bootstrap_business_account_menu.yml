@@ -1,0 +1,26 @@
+uuid: 868498fa-85fd-49d6-8813-2572109d19a1
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+  theme:
+    - bootstrap_business
+_core:
+  default_config_hash: DweBpscQZdG0-fHkSpUzdYucrNH45G_KF7Z82V-oyQM
+id: bootstrap_business_account_menu
+theme: bootstrap_business
+region: pre_header_first
+weight: 0
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'Menú de cuenta de usuario'
+  provider: system
+  label_display: '0'
+  level: 1
+  depth: 1
+visibility: {  }

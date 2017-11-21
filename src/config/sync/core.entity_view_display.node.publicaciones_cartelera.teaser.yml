@@ -1,0 +1,29 @@
+uuid: 1f34282a-abb5-4ceb-a6d7-de3453a975dd
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.publicaciones_cartelera.body
+    - node.type.publicaciones_cartelera
+  module:
+    - text
+    - user
+id: node.publicaciones_cartelera.teaser
+targetEntityType: node
+bundle: publicaciones_cartelera
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

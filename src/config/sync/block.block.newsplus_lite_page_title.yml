@@ -1,0 +1,20 @@
+uuid: 6ac590e5-2a18-4d3a-b500-a5a76f89fe6c
+langcode: es
+status: true
+dependencies:
+  theme:
+    - newsplus_lite
+_core:
+  default_config_hash: Bh4kCvvGVG_PS5xUxdT9K_FQluaKLAYoB84B049znTg
+id: newsplus_lite_page_title
+theme: newsplus_lite
+region: content
+weight: -4
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Page title'
+  provider: core
+  label_display: '0'
+visibility: {  }

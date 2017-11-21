@@ -1,0 +1,29 @@
+uuid: 6134b51c-eae3-4966-bbc3-cb81788820bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.pagina_de_carrera_.body
+    - field.field.node.pagina_de_carrera_.field_orden
+    - field.field.node.pagina_de_carrera_.field_visible
+    - node.type.pagina_de_carrera_
+  module:
+    - text
+    - user
+id: node.pagina_de_carrera_.default
+targetEntityType: node
+bundle: pagina_de_carrera_
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+hidden:
+  field_orden: true
+  field_visible: true
+  langcode: true
+  links: true

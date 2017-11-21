@@ -1,0 +1,32 @@
+uuid: 99ab6146-c321-4443-a625-31c6cec0c83c
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.menu_catedra
+  module:
+    - node
+    - views
+  theme:
+    - newsplus_lite
+id: views_block__menu_catedra_block_1
+theme: newsplus_lite
+region: sidebar_second
+weight: -7
+provider: null
+plugin: 'views_block:menu_catedra-block_1'
+settings:
+  id: 'views_block:menu_catedra-block_1'
+  label: 'Sobre la Cátedra'
+  provider: views
+  label_display: visible
+  views_label: 'Sobre la Cátedra'
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      pagina_de_catedra: pagina_de_catedra
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
