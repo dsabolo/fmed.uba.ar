@@ -38,6 +38,7 @@
         "drupal/bootstrap": "^3.6",
         "drupal/console": "^1.0",
         "drupal/core": "~8.0",
+        "drupal/paragraphs": "^1.2",
         "drupal/responsive_tables_filter": "^1.1",
         "drupal/superfish": "^1.1",
         "drupal/views_slideshow": "^4.5",
