@@ -1,0 +1,36 @@
+uuid: 7b7c7a8d-2fb3-41c4-8e64-764a05a9767b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.parrafos_desplegables_acordeon_.field_contenido_desplegable
+    - field.field.paragraph.parrafos_desplegables_acordeon_.field_titulo
+    - paragraphs.paragraphs_type.parrafos_desplegables_acordeon_
+  module:
+    - text
+id: paragraph.parrafos_desplegables_acordeon_.default
+targetEntityType: paragraph
+bundle: parrafos_desplegables_acordeon_
+mode: default
+content:
+  field_contenido_desplegable:
+    weight: 1
+    settings:
+      rows: 5
+      placeholder: ''
+    third_party_settings: {  }
+    type: text_textarea
+    region: content
+  field_titulo:
+    weight: 0
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+hidden:
+  created: true
+  moderation_state: true
+  status: true
+  uid: true

@@ -1,0 +1,30 @@
+uuid: e4ef9197-2d2b-44e2-9dd3-ecaccc79a417
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.boletin_informativo.body
+    - node.type.boletin_informativo
+  module:
+    - text
+    - user
+id: node.boletin_informativo.teaser
+targetEntityType: node
+bundle: boletin_informativo
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

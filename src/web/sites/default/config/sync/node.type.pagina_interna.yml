@@ -1,0 +1,18 @@
+uuid: 1225e525-e840-4a97-84cd-fd003d3f1806
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Página Interna'
+type: pagina_interna
+description: 'Permite una publicación básica dentro de una sección.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

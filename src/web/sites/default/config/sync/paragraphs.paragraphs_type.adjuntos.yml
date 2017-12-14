@@ -1,0 +1,9 @@
+uuid: f0aeb989-4940-4af9-93d6-8ab6e3866034
+langcode: es
+status: true
+dependencies: {  }
+id: adjuntos
+label: Adjuntos
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

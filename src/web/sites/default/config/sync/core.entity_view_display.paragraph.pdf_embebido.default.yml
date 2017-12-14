@@ -1,0 +1,22 @@
+uuid: 2a22a487-af9b-4435-90f5-a2c020b8e9f7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.pdf_embebido.field_archivo_pdf
+    - paragraphs.paragraphs_type.pdf_embebido
+  module:
+    - file
+id: paragraph.pdf_embebido.default
+targetEntityType: paragraph
+bundle: pdf_embebido
+mode: default
+content:
+  field_archivo_pdf:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden: {  }

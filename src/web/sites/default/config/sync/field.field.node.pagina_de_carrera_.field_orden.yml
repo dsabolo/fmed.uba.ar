@@ -1,0 +1,23 @@
+uuid: df7fab5e-8044-46a0-9a87-b30014f6b2c4
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_orden
+    - node.type.pagina_de_carrera_
+id: node.pagina_de_carrera_.field_orden
+field_name: field_orden
+entity_type: node
+bundle: pagina_de_carrera_
+label: Orden
+description: 'El orden de aparición en el menú de esta página respecto a las otras. Tener en cuenta que el orden es relativo.'
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 1
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

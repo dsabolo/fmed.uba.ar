@@ -1,0 +1,22 @@
+uuid: 8a3eba9c-a312-4f99-8113-1915f9c4ba69
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - newsplus_lite
+_core:
+  default_config_hash: g49-4DhUBescrnECf-8F7dCpGRUdgdHI0fWYj8vnt_s
+id: newsplus_lite_content
+theme: newsplus_lite
+region: content
+weight: -1
+provider: null
+plugin: system_main_block
+settings:
+  id: system_main_block
+  label: 'Main page content'
+  provider: system
+  label_display: '0'
+visibility: {  }

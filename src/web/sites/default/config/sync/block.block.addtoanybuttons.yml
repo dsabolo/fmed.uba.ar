@@ -1,0 +1,20 @@
+uuid: aeedce73-5b5f-49bf-91fd-8e1bd9196e99
+langcode: es
+status: true
+dependencies:
+  module:
+    - addtoany
+  theme:
+    - newsplus_lite
+id: addtoanybuttons
+theme: newsplus_lite
+region: sidebar_second
+weight: -5
+provider: null
+plugin: addtoany_block
+settings:
+  id: addtoany_block
+  label: Compartir
+  provider: addtoany
+  label_display: visible
+visibility: {  }

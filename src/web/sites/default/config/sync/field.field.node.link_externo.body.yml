@@ -1,0 +1,22 @@
+uuid: 5be37b18-f6d6-4e4b-8f85-fa0496820274
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.link_externo
+  module:
+    - text
+id: node.link_externo.body
+field_name: body
+entity_type: node
+bundle: link_externo
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

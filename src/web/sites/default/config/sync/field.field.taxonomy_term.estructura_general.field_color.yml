@@ -1,0 +1,21 @@
+uuid: 7bf79624-a244-4f62-9238-140bcce13459
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_color
+    - taxonomy.vocabulary.estructura_general
+id: taxonomy_term.estructura_general.field_color
+field_name: field_color
+entity_type: taxonomy_term
+bundle: estructura_general
+label: Color
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: '#ea722d'
+default_value_callback: ''
+settings: {  }
+field_type: string

@@ -1,0 +1,31 @@
+uuid: 2eea8990-fa29-4134-aa53-6269170abf6f
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pagina_de_carrera_.body
+    - node.type.pagina_de_carrera_
+  module:
+    - text
+    - user
+id: node.pagina_de_carrera_.teaser
+targetEntityType: node
+bundle: pagina_de_carrera_
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  field_orden: true
+  field_visible: true
+  langcode: true

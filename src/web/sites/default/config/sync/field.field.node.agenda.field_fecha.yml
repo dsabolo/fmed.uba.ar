@@ -1,0 +1,21 @@
+uuid: c3b52182-1d7c-4f13-aa5c-aa24cae2f167
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_fecha
+    - node.type.agenda
+  module:
+    - datetime
+id: node.agenda.field_fecha
+field_name: field_fecha
+entity_type: node
+bundle: agenda
+label: Fecha
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: datetime

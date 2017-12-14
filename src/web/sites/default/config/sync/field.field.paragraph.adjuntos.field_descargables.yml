@@ -1,0 +1,27 @@
+uuid: 029d215d-ab74-4f50-92d5-ce56b41a8751
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_descargables
+    - paragraphs.paragraphs_type.adjuntos
+  module:
+    - file
+id: paragraph.adjuntos.field_descargables
+field_name: field_descargables
+entity_type: paragraph
+bundle: adjuntos
+label: Descargables
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'zip doc docx xls xlsx pdf'
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

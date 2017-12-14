@@ -1,0 +1,9 @@
+uuid: 265de4c9-7abf-4fcf-8adc-f3f36d7be3df
+langcode: es
+status: true
+dependencies: {  }
+id: lanzadores_
+label: 'Lanzadores '
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

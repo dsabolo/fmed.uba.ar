@@ -1,0 +1,27 @@
+uuid: 18980c3c-03c6-48aa-8657-6db44961d179
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_archivo_pdf
+    - paragraphs.paragraphs_type.pdf_embebido
+  module:
+    - file
+id: paragraph.pdf_embebido.field_archivo_pdf
+field_name: field_archivo_pdf
+entity_type: paragraph
+bundle: pdf_embebido
+label: 'Archivo PDF'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: pdf
+  max_filesize: ''
+  description_field: true
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: file

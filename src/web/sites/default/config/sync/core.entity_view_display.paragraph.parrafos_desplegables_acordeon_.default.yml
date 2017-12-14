@@ -1,0 +1,31 @@
+uuid: 52555b45-c281-4fc8-a46a-6a9b18909dc3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.parrafos_desplegables_acordeon_.field_contenido_desplegable
+    - field.field.paragraph.parrafos_desplegables_acordeon_.field_titulo
+    - paragraphs.paragraphs_type.parrafos_desplegables_acordeon_
+  module:
+    - text
+id: paragraph.parrafos_desplegables_acordeon_.default
+targetEntityType: paragraph
+bundle: parrafos_desplegables_acordeon_
+mode: default
+content:
+  field_contenido_desplegable:
+    weight: 1
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+  field_titulo:
+    weight: 0
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+hidden: {  }

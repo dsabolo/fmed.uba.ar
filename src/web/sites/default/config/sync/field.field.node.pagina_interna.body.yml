@@ -1,0 +1,22 @@
+uuid: 24d2c95c-62f2-432a-ab9f-8c166b032b7d
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pagina_interna
+  module:
+    - text
+id: node.pagina_interna.body
+field_name: body
+entity_type: node
+bundle: pagina_interna
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

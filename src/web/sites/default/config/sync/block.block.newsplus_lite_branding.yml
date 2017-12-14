@@ -1,0 +1,25 @@
+uuid: fd783487-40a6-4c75-b707-7f7a79e844a2
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - newsplus_lite
+_core:
+  default_config_hash: aNdnwqyt-k0AdGaG6L12hq8ltUO1zEGo4uj34PndtS8
+id: newsplus_lite_branding
+theme: newsplus_lite
+region: header_top_left
+weight: 0
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Site branding'
+  provider: system
+  label_display: '0'
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

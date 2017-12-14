@@ -1,0 +1,19 @@
+uuid: 1e33abbe-57c6-4eb3-85aa-4eeeb6b4c0b3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_titulo
+    - paragraphs.paragraphs_type.parrafos_desplegables_acordeon_
+id: paragraph.parrafos_desplegables_acordeon_.field_titulo
+field_name: field_titulo
+entity_type: paragraph
+bundle: parrafos_desplegables_acordeon_
+label: Título
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

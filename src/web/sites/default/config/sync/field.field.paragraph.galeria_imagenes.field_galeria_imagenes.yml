@@ -1,0 +1,38 @@
+uuid: 44e33572-de6c-4a6d-91d2-0026c8a9f38e
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_galeria_imagenes
+    - paragraphs.paragraphs_type.galeria_imagenes
+  module:
+    - image
+id: paragraph.galeria_imagenes.field_galeria_imagenes
+field_name: field_galeria_imagenes
+entity_type: paragraph
+bundle: galeria_imagenes
+label: 'Galería Imágenes'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  file_extensions: 'png gif jpg jpeg'
+  max_filesize: ''
+  max_resolution: ''
+  min_resolution: ''
+  alt_field: false
+  alt_field_required: false
+  title_field: false
+  title_field_required: false
+  default_image:
+    uuid: ''
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

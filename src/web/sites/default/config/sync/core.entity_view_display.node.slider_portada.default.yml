@@ -1,0 +1,62 @@
+uuid: f38d2dfe-859f-4728-bc07-0b567a1c1740
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.slider_portada.field_bajada
+    - field.field.node.slider_portada.field_color_destaque
+    - field.field.node.slider_portada.field_imagen
+    - field.field.node.slider_portada.field_link
+    - node.type.slider_portada
+  module:
+    - image
+    - link
+    - user
+id: node.slider_portada.default
+targetEntityType: node
+bundle: slider_portada
+mode: default
+content:
+  field_bajada:
+    weight: 103
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_color_destaque:
+    weight: 104
+    label: above
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+    type: string
+    region: content
+  field_imagen:
+    weight: 101
+    label: above
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  field_link:
+    weight: 102
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

@@ -1,0 +1,9 @@
+uuid: fe934ea2-269c-49df-94e1-bbeeb63580c0
+langcode: es
+status: true
+dependencies: {  }
+id: parrafos_desplegables_acordeon_
+label: 'Párrafos Desplegables (Acordeón)'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

@@ -1,0 +1,25 @@
+uuid: adc49021-6be3-46a8-8316-927d0a65b2a6
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publica_en_seccion
+    - node.type.pagina_interna
+id: node.pagina_interna.field_publica_en_seccion
+field_name: field_publica_en_seccion
+entity_type: node
+bundle: pagina_interna
+label: 'Publica en sección'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: paginas_en_la_que_puede_publicar
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

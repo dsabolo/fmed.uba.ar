@@ -1,0 +1,28 @@
+uuid: d42ac9e7-e544-4606-baf7-443814079743
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.boletin_informativo.body
+    - node.type.boletin_informativo
+  module:
+    - text
+    - user
+id: node.boletin_informativo.default
+targetEntityType: node
+bundle: boletin_informativo
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

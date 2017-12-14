@@ -1,0 +1,25 @@
+uuid: 9caad07f-8b6a-4229-ac8b-23a43540e012
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_visible
+    - node.type.agenda
+id: node.agenda.field_visible
+field_name: field_visible
+entity_type: node
+bundle: agenda
+label: 'Publicar en Cátedra'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: catedras_que_puede_publicar
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

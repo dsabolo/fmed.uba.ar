@@ -1,0 +1,29 @@
+uuid: c8aa5d38-95a5-4bfb-9904-48c985a7aeba
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_visible
+    - node.type.bloque_lateral_informativo
+    - taxonomy.vocabulary.ctedras
+id: node.bloque_lateral_informativo.field_visible
+field_name: field_visible
+entity_type: node
+bundle: bloque_lateral_informativo
+label: 'Publicar en Cátedra'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ctedras: ctedras
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

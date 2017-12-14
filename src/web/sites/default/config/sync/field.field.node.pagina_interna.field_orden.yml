@@ -1,0 +1,23 @@
+uuid: 7f2879c9-c8d1-4d56-adf0-71883a684508
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_orden
+    - node.type.pagina_interna
+id: node.pagina_interna.field_orden
+field_name: field_orden
+entity_type: node
+bundle: pagina_interna
+label: Orden
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

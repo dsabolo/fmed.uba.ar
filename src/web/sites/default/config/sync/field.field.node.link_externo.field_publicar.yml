@@ -1,0 +1,25 @@
+uuid: 191d27e9-c15c-4cf3-81f8-475e2af22880
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publicar
+    - node.type.link_externo
+id: node.link_externo.field_publicar
+field_name: field_publicar
+entity_type: node
+bundle: link_externo
+label: 'Publicar en carrera'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: carreras_que_puede_publicar
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

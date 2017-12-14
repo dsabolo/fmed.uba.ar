@@ -1,0 +1,22 @@
+uuid: fdd54b9a-9283-460d-a5f3-17cf4670ee96
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.adjuntos.field_descargables
+    - paragraphs.paragraphs_type.adjuntos
+  module:
+    - file
+id: paragraph.adjuntos.default
+targetEntityType: paragraph
+bundle: adjuntos
+mode: default
+content:
+  field_descargables:
+    weight: 0
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: file_default
+    region: content
+hidden: {  }

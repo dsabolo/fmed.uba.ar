@@ -1,0 +1,11 @@
+uuid: 5169df45-ceea-486a-96bf-87d071c9f99d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bloque_lateral_informativo
+id: node.bloque_lateral_informativo
+target_entity_type_id: node
+target_bundle: bloque_lateral_informativo
+default_langcode: site_default
+language_alterable: false

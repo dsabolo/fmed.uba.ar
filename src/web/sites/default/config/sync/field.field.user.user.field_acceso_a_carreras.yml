@@ -1,0 +1,30 @@
+uuid: da72cf31-0f9f-4ac7-9b04-4e0c38908458
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_acceso_a_carreras
+    - taxonomy.vocabulary.carreras
+  module:
+    - user
+id: user.user.field_acceso_a_carreras
+field_name: field_acceso_a_carreras
+entity_type: user
+bundle: user
+label: 'Acceso a carreras'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      carreras: carreras
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

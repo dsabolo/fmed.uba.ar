@@ -1,0 +1,20 @@
+uuid: defda93c-1185-4543-aeef-d5aa808db9c7
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - taxonomy
+id: node.field_publica_en_seccion
+field_name: field_publica_en_seccion
+entity_type: node
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

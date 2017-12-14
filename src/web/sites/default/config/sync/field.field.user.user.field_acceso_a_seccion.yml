@@ -1,0 +1,30 @@
+uuid: 72d51ddf-b96c-4be8-9d53-136b64536165
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_acceso_a_seccion
+    - taxonomy.vocabulary.estructura_general
+  module:
+    - user
+id: user.user.field_acceso_a_seccion
+field_name: field_acceso_a_seccion
+entity_type: user
+bundle: user
+label: 'Acceso a sección'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      estructura_general: estructura_general
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

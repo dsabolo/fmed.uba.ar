@@ -1,0 +1,69 @@
+uuid: 74fcd537-8aae-444c-8996-bd6609128b39
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.link_externo.body
+    - field.field.node.link_externo.field_link
+    - field.field.node.link_externo.field_orden
+    - field.field.node.link_externo.field_publicar
+    - field.field.node.link_externo.field_visible
+    - node.type.link_externo
+  module:
+    - link
+    - text
+    - user
+id: node.link_externo.default
+targetEntityType: node
+bundle: link_externo
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_link:
+    weight: 102
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+  field_orden:
+    weight: 105
+    label: above
+    settings:
+      thousand_separator: ''
+      prefix_suffix: true
+    third_party_settings: {  }
+    type: number_integer
+    region: content
+  field_publicar:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_visible:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

@@ -1,0 +1,25 @@
+uuid: 5a4315c1-2d4e-4293-aa42-323d16bf7003
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_visible
+    - node.type.publicaciones_cartelera
+id: node.publicaciones_cartelera.field_visible
+field_name: field_visible
+entity_type: node
+bundle: publicaciones_cartelera
+label: 'Mostrar en Carrera'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: carreras_que_puede_publicar
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

@@ -1,0 +1,18 @@
+uuid: 8b2c1c55-28c9-41a3-b408-f7520ce95b50
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.bloque_lateral_informativo
+id: node.bloque_lateral_informativo.title
+field_name: title
+entity_type: node
+bundle: bloque_lateral_informativo
+label: 'Título del bloque'
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

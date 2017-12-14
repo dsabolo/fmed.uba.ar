@@ -1,0 +1,52 @@
+uuid: e4873ac6-ccc0-4738-b9c2-e6904bf23ef8
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slider_portada.field_bajada
+    - field.field.node.slider_portada.field_imagen
+    - field.field.node.slider_portada.field_link
+    - image.style.bannerportada
+    - node.type.slider_portada
+  module:
+    - image
+    - link
+    - user
+id: node.slider_portada.teaser
+targetEntityType: node
+bundle: slider_portada
+mode: teaser
+content:
+  field_bajada:
+    type: string
+    weight: 1
+    region: content
+    label: hidden
+    settings:
+      link_to_entity: false
+    third_party_settings: {  }
+  field_imagen:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: bannerportada
+      image_link: ''
+    third_party_settings: {  }
+  field_link:
+    type: link
+    weight: 2
+    region: content
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+hidden:
+  langcode: true
+  links: true

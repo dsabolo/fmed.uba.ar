@@ -1,0 +1,29 @@
+uuid: 7e465bfb-7abc-45be-b29d-116b87da9da9
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.pagina_interna.body
+    - node.type.pagina_interna
+  module:
+    - text
+    - user
+id: node.pagina_interna.teaser
+targetEntityType: node
+bundle: pagina_interna
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

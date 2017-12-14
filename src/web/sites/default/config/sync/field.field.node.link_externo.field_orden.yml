@@ -1,0 +1,23 @@
+uuid: 9ec56166-5022-4aa8-9807-e08af9bcb576
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_orden
+    - node.type.link_externo
+id: node.link_externo.field_orden
+field_name: field_orden
+entity_type: node
+bundle: link_externo
+label: Orden
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: null
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

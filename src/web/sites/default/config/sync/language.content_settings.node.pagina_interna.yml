@@ -1,0 +1,11 @@
+uuid: 2d05b7d7-3cf2-4406-a292-fa20eab0d438
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_interna
+id: node.pagina_interna
+target_entity_type_id: node
+target_bundle: pagina_interna
+default_langcode: site_default
+language_alterable: false

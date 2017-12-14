@@ -1,0 +1,19 @@
+fixed_header: 1
+scrolltop_display: 1
+bootstrap_remote_type: cdn
+_core:
+  default_config_hash: 5Ba57QD7msoZrStw11sVxvzj7eFrCVkNCmOJmTKQe10
+langcode: es
+features:
+  node_user_picture: true
+  comment_user_picture: true
+  comment_user_verification: true
+  favicon: true
+logo:
+  use_default: false
+  path: 'public://logo_b_1.png'
+favicon:
+  use_default: true
+header: ''
+scrolltop: ''
+premium_description: ''

@@ -1,0 +1,29 @@
+uuid: a15bb470-d3d4-4e68-bc51-b8f0f62637db
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.link_externo.body
+    - node.type.link_externo
+  module:
+    - text
+    - user
+id: node.link_externo.teaser
+targetEntityType: node
+bundle: link_externo
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 101
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

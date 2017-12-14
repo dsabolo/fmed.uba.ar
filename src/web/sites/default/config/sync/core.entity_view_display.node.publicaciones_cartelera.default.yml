@@ -1,0 +1,45 @@
+uuid: 7c01c81d-4a2d-4ab1-ae9a-051d8bcaa319
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.publicaciones_cartelera.body
+    - field.field.node.publicaciones_cartelera.field_publicar
+    - field.field.node.publicaciones_cartelera.field_visible
+    - node.type.publicaciones_cartelera
+  module:
+    - text
+    - user
+id: node.publicaciones_cartelera.default
+targetEntityType: node
+bundle: publicaciones_cartelera
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_publicar:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_visible:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

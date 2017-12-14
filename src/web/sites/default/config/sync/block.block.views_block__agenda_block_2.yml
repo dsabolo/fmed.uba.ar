@@ -1,0 +1,24 @@
+uuid: 4d833088-c0df-4f8e-ad7a-8ab27cd9c549
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.agenda
+  module:
+    - views
+  theme:
+    - newsplus_lite
+id: views_block__agenda_block_2
+theme: newsplus_lite
+region: footer_fourth
+weight: -10
+provider: null
+plugin: 'views_block:agenda-block_2'
+settings:
+  id: 'views_block:agenda-block_2'
+  label: 'Agenda de Eventos'
+  provider: views
+  label_display: visible
+  views_label: 'Agenda de Eventos'
+  items_per_page: none
+visibility: {  }

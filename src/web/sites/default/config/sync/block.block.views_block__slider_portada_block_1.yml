@@ -1,0 +1,30 @@
+uuid: b1552863-8699-40ba-a43c-027b86dbf683
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.slider_portada
+  module:
+    - system
+    - views
+  theme:
+    - newsplus_lite
+id: views_block__slider_portada_block_1
+theme: newsplus_lite
+region: page_intro
+weight: 0
+provider: null
+plugin: 'views_block:slider_portada-block_1'
+settings:
+  id: 'views_block:slider_portada-block_1'
+  label: ''
+  provider: views
+  label_display: '0'
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

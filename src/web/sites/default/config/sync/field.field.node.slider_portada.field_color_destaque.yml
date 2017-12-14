@@ -1,0 +1,21 @@
+uuid: ac4bd5d1-5152-4e45-a4fb-03d7469fc2c9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_color_destaque
+    - node.type.slider_portada
+id: node.slider_portada.field_color_destaque
+field_name: field_color_destaque
+entity_type: node
+bundle: slider_portada
+label: 'Color Destaque'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: '#ea722d'
+default_value_callback: ''
+settings: {  }
+field_type: string

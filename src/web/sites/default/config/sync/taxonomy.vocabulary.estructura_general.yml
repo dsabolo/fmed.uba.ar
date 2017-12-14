@@ -1,0 +1,9 @@
+uuid: a0300fbf-bf15-4e52-9cd4-2d6c4b6319b8
+langcode: es
+status: true
+dependencies: {  }
+name: 'Estructura General'
+vid: estructura_general
+description: ''
+hierarchy: 1
+weight: 0

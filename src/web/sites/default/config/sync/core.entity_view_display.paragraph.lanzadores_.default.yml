@@ -1,0 +1,27 @@
+uuid: e1990439-7c7e-41fb-926f-37126fd74570
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.lanzadores_.field_link
+    - paragraphs.paragraphs_type.lanzadores_
+  module:
+    - link
+id: paragraph.lanzadores_.default
+targetEntityType: paragraph
+bundle: lanzadores_
+mode: default
+content:
+  field_link:
+    weight: 0
+    label: hidden
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    type: link
+    region: content
+hidden: {  }

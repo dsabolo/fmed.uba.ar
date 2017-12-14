@@ -1,0 +1,11 @@
+uuid: b16d33ca-58e1-49d2-af16-537c1a86deab
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.estructura_general
+id: taxonomy_term.estructura_general
+target_entity_type_id: taxonomy_term
+target_bundle: estructura_general
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,17 @@
+uuid: 7b14948f-4aec-435e-b00f-661df192e9fd
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus: {  }
+    parent: ''
+name: 'Página de carrera'
+type: pagina_de_carrera_
+description: 'Permite agregar una página descriptiva a una carrera'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

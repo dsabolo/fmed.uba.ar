@@ -1,0 +1,29 @@
+uuid: 31b70219-c703-47af-aca5-b6dec4ece6ea
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publicar
+    - node.type.bloque_lateral_informativo
+    - taxonomy.vocabulary.carreras
+id: node.bloque_lateral_informativo.field_publicar
+field_name: field_publicar
+entity_type: node
+bundle: bloque_lateral_informativo
+label: 'Publicar en carrera'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      carreras: carreras
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

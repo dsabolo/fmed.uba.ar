@@ -1,0 +1,18 @@
+uuid: cfb4e248-2160-4f4f-be1c-47d87f6caa41
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: 'Slider Portada'
+type: slider_portada
+description: 'Permite agregar un Slider en la portada del sitio'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: false

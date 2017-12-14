@@ -1,0 +1,55 @@
+uuid: 83acabc7-c412-4349-a714-948ffc8c6bea
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.bloque_lateral_informativo.body
+    - field.field.node.bloque_lateral_informativo.field_publica_en_seccion
+    - field.field.node.bloque_lateral_informativo.field_publicar
+    - field.field.node.bloque_lateral_informativo.field_visible
+    - node.type.bloque_lateral_informativo
+  module:
+    - text
+    - user
+id: node.bloque_lateral_informativo.default
+targetEntityType: node
+bundle: bloque_lateral_informativo
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_publica_en_seccion:
+    weight: 102
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_publicar:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_visible:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  addtoany: true
+  langcode: true

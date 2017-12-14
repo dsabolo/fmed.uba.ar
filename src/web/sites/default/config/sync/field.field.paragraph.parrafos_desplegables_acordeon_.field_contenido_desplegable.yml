@@ -1,0 +1,21 @@
+uuid: 1a2f44fb-387d-4f81-aaec-79edc898eefb
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_contenido_desplegable
+    - paragraphs.paragraphs_type.parrafos_desplegables_acordeon_
+  module:
+    - text
+id: paragraph.parrafos_desplegables_acordeon_.field_contenido_desplegable
+field_name: field_contenido_desplegable
+entity_type: paragraph
+bundle: parrafos_desplegables_acordeon_
+label: 'Contenido desplegable'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

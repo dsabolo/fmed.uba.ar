@@ -1,0 +1,13 @@
+uuid: 50df990c-a1a6-4c25-881c-bc1532af3741
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: Zx0jD1Klh5tZaGJy8uOeR_2MCu9FDM4xg7TaUJUEbkI
+id: node_delete_action
+label: 'Eliminar contenido'
+type: node
+plugin: node_delete_action
+configuration: {  }

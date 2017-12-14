@@ -1,0 +1,22 @@
+uuid: 57a69a8a-3b08-4dbb-b902-df5546223704
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.boletin_informativo
+  module:
+    - text
+id: node.boletin_informativo.body
+field_name: body
+entity_type: node
+bundle: boletin_informativo
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

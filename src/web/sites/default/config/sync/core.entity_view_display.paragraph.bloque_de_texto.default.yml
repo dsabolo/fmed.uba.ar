@@ -1,0 +1,22 @@
+uuid: a9f74759-c2ef-4f65-a280-147f6e8935f1
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.bloque_de_texto.field_texto
+    - paragraphs.paragraphs_type.bloque_de_texto
+  module:
+    - text
+id: paragraph.bloque_de_texto.default
+targetEntityType: paragraph
+bundle: bloque_de_texto
+mode: default
+content:
+  field_texto:
+    weight: 0
+    label: hidden
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
+hidden: {  }

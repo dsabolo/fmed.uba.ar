@@ -1,0 +1,32 @@
+uuid: 817e72e2-8171-46b0-946a-72349b84872a
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.menu_carreras
+  module:
+    - node
+    - views
+  theme:
+    - newsplus_lite
+id: views_block__menu_carreras_block_1
+theme: newsplus_lite
+region: sidebar_second
+weight: -10
+provider: null
+plugin: 'views_block:menu_carreras-block_1'
+settings:
+  id: 'views_block:menu_carreras-block_1'
+  label: 'Sobre la carrera'
+  provider: views
+  label_display: visible
+  views_label: 'Sobre la carrera'
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      pagina_de_carrera_: pagina_de_carrera_
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,24 @@
+uuid: a6c651f2-8129-4184-a3cc-87d3e1ce7223
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.posgrados
+  module:
+    - system
+  theme:
+    - newsplus_lite
+id: posgrados
+theme: newsplus_lite
+region: footer_third
+weight: 0
+provider: null
+plugin: 'system_menu_block:posgrados'
+settings:
+  id: 'system_menu_block:posgrados'
+  label: Posgrados
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

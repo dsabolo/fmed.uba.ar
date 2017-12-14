@@ -1,0 +1,41 @@
+uuid: 75375bdc-6f14-44fe-9539-3d54fc20e0bf
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.pagina_de_catedra.body
+    - field.field.node.pagina_de_catedra.field_incluir_widgets
+    - field.field.node.pagina_de_catedra.field_orden
+    - field.field.node.pagina_de_catedra.field_publicar
+    - node.type.pagina_de_catedra
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.pagina_de_catedra.default
+targetEntityType: node
+bundle: pagina_de_catedra
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_incluir_widgets:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_orden: true
+  field_publicar: true
+  langcode: true
+  links: true

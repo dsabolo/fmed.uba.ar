@@ -1,0 +1,21 @@
+uuid: d30b4596-828f-4a20-b36e-6e3129e5bb89
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_color
+    - taxonomy.vocabulary.ctedras
+id: taxonomy_term.ctedras.field_color
+field_name: field_color
+entity_type: taxonomy_term
+bundle: ctedras
+label: Color
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: '#ea722d'
+default_value_callback: ''
+settings: {  }
+field_type: string

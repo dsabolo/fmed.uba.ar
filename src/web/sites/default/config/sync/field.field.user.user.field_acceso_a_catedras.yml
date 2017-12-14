@@ -1,0 +1,30 @@
+uuid: 39ee2578-ad54-4963-85a6-25b635ad3b50
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.user.field_acceso_a_catedras
+    - taxonomy.vocabulary.ctedras
+  module:
+    - user
+id: user.user.field_acceso_a_catedras
+field_name: field_acceso_a_catedras
+entity_type: user
+bundle: user
+label: 'Acceso a cátedras'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      ctedras: ctedras
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

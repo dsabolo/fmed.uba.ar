@@ -1,0 +1,20 @@
+uuid: 6d701263-a0e3-4977-a462-683903441934
+langcode: es
+status: true
+dependencies:
+  module:
+    - search
+  theme:
+    - newsplus_lite
+id: formulariodebusqueda
+theme: newsplus_lite
+region: header_top_right
+weight: 0
+provider: null
+plugin: search_form_block
+settings:
+  id: search_form_block
+  label: Buscar
+  provider: search
+  label_display: visible
+visibility: {  }

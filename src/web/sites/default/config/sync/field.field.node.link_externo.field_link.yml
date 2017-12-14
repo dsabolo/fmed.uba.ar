@@ -1,0 +1,23 @@
+uuid: 1676c32a-8a70-4cdf-80f8-0b183e1c2020
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_link
+    - node.type.link_externo
+  module:
+    - link
+id: node.link_externo.field_link
+field_name: field_link
+entity_type: node
+bundle: link_externo
+label: Link
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 0
+field_type: link

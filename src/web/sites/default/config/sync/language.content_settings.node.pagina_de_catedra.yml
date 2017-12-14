@@ -1,0 +1,11 @@
+uuid: ac5ba0e8-30e5-4406-b7cc-c88d89b939aa
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.pagina_de_catedra
+id: node.pagina_de_catedra
+target_entity_type_id: node
+target_bundle: pagina_de_catedra
+default_langcode: site_default
+language_alterable: false

@@ -1,0 +1,11 @@
+uuid: 9313ebe7-541d-494d-b08b-ac521b9360d0
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.slider_portada
+id: node.slider_portada
+target_entity_type_id: node
+target_bundle: slider_portada
+default_langcode: site_default
+language_alterable: false

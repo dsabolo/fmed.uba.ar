@@ -1,0 +1,25 @@
+uuid: 2c5601cd-b249-45cc-8f76-bb6bab34b6cc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_visible
+    - node.type.pagina_de_carrera_
+id: node.pagina_de_carrera_.field_visible
+field_name: field_visible
+entity_type: node
+bundle: pagina_de_carrera_
+label: 'Publicar en'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: carreras_que_puede_publicar
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

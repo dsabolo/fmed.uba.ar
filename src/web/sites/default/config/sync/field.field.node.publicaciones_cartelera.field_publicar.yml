@@ -1,0 +1,25 @@
+uuid: 75d23aa3-ba55-476f-80d9-2eaced9cf981
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publicar
+    - node.type.publicaciones_cartelera
+id: node.publicaciones_cartelera.field_publicar
+field_name: field_publicar
+entity_type: node
+bundle: publicaciones_cartelera
+label: 'Mostrar en Cátedra'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: catedras_que_puede_publicar
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

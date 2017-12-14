@@ -1,0 +1,11 @@
+uuid: decb9c7b-390c-4cac-92ae-714a529bde41
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.link_externo
+id: node.link_externo
+target_entity_type_id: node
+target_bundle: link_externo
+default_langcode: site_default
+language_alterable: false

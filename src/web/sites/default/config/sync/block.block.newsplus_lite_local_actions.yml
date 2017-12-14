@@ -1,0 +1,20 @@
+uuid: a1182edc-c25e-489d-831c-287ffd10bcba
+langcode: es
+status: true
+dependencies:
+  theme:
+    - newsplus_lite
+_core:
+  default_config_hash: seJxgYrod5V2hxdSLtE80ziqvhV-cSXMTHI8PPyCg2Y
+id: newsplus_lite_local_actions
+theme: newsplus_lite
+region: content
+weight: -3
+provider: null
+plugin: local_actions_block
+settings:
+  id: local_actions_block
+  label: 'Primary admin actions'
+  provider: core
+  label_display: '0'
+visibility: {  }

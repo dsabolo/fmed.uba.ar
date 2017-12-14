@@ -1,0 +1,9 @@
+uuid: 2a2f3548-0adb-471f-b0ff-24352df1126e
+langcode: es
+status: true
+dependencies: {  }
+id: pdf_embebido
+label: 'PDF Embebido'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

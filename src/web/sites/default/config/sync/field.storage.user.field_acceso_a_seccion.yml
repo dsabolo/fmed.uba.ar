@@ -1,0 +1,20 @@
+uuid: a9338492-c88d-4fb3-bb17-80fb5245d320
+langcode: es
+status: true
+dependencies:
+  module:
+    - taxonomy
+    - user
+id: user.field_acceso_a_seccion
+field_name: field_acceso_a_seccion
+entity_type: user
+type: entity_reference
+settings:
+  target_type: taxonomy_term
+module: core
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

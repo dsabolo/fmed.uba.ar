@@ -1,0 +1,45 @@
+uuid: bc90b083-5d1e-4e91-b9f6-f487d1b3dc78
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.pagina_interna.body
+    - field.field.node.pagina_interna.field_incluir_widgets_
+    - field.field.node.pagina_interna.field_orden
+    - field.field.node.pagina_interna.field_publica_en_seccion
+    - node.type.pagina_interna
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.pagina_interna.default
+targetEntityType: node
+bundle: pagina_interna
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_incluir_widgets_:
+    type: entity_reference_revisions_entity_view
+    weight: 2
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+  links:
+    weight: 0
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_orden: true
+  field_publica_en_seccion: true
+  langcode: true

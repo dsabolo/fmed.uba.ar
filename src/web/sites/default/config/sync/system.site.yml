@@ -1,0 +1,14 @@
+uuid: 7755f193-b446-4605-a1ac-8e3a1f5ec132
+name: 'Facultad de Medicina UBA'
+mail: info@fmed.uba.ar
+slogan: ''
+page:
+  403: ''
+  404: ''
+  front: /node/1
+admin_compact_mode: false
+weight_select_max: 100
+langcode: es
+default_langcode: es
+_core:
+  default_config_hash: AyT9s8OUcclfALRE_imByOMgtZ19eOlqdF6zI3p7yqo

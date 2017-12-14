@@ -1,0 +1,38 @@
+uuid: 66b38198-f630-467f-b3fb-7bc0688906d9
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.taxonomy_term.field_imagen_decorativa_
+    - taxonomy.vocabulary.carreras
+  module:
+    - image
+id: taxonomy_term.carreras.field_imagen_decorativa_
+field_name: field_imagen_decorativa_
+entity_type: taxonomy_term
+bundle: carreras
+label: 'Imagen Decorativa '
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  file_extensions: 'png gif jpg jpeg'
+  alt_field: true
+  alt_field_required: true
+  title_field: false
+  title_field_required: false
+  max_resolution: ''
+  min_resolution: ''
+  default_image:
+    uuid: null
+    alt: ''
+    title: ''
+    width: null
+    height: null
+  file_directory: '[date:custom:Y]-[date:custom:m]'
+  max_filesize: ''
+  handler: 'default:file'
+  handler_settings: {  }
+field_type: image

@@ -1,0 +1,41 @@
+uuid: 6134b51c-eae3-4966-bbc3-cb81788820bc
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.pagina_de_carrera_.body
+    - field.field.node.pagina_de_carrera_.field_orden
+    - field.field.node.pagina_de_carrera_.field_visible
+    - field.field.node.pagina_de_carrera_.field_widgets
+    - node.type.pagina_de_carrera_
+  module:
+    - entity_reference_revisions
+    - text
+    - user
+id: node.pagina_de_carrera_.default
+targetEntityType: node
+bundle: pagina_de_carrera_
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 0
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_widgets:
+    type: entity_reference_revisions_entity_view
+    weight: 1
+    label: hidden
+    settings:
+      view_mode: default
+      link: ''
+    third_party_settings: {  }
+    region: content
+hidden:
+  addtoany: true
+  field_orden: true
+  field_visible: true
+  langcode: true
+  links: true

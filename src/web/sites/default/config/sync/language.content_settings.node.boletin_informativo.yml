@@ -1,0 +1,11 @@
+uuid: d559ccf5-4a57-4a93-b39a-8779fb4dd7b1
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.boletin_informativo
+id: node.boletin_informativo
+target_entity_type_id: node
+target_bundle: boletin_informativo
+default_langcode: site_default
+language_alterable: false

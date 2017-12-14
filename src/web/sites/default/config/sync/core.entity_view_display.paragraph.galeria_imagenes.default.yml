@@ -1,0 +1,24 @@
+uuid: e7f21552-1c79-49b8-95cb-0d098c6a02a2
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.paragraph.galeria_imagenes.field_galeria_imagenes
+    - paragraphs.paragraphs_type.galeria_imagenes
+  module:
+    - image
+id: paragraph.galeria_imagenes.default
+targetEntityType: paragraph
+bundle: galeria_imagenes
+mode: default
+content:
+  field_galeria_imagenes:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+hidden: {  }

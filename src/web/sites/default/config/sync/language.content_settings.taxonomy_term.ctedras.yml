@@ -1,0 +1,11 @@
+uuid: 940b07f0-c53e-423a-a549-4434ffd557f3
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.ctedras
+id: taxonomy_term.ctedras
+target_entity_type_id: taxonomy_term
+target_bundle: ctedras
+default_langcode: site_default
+language_alterable: false

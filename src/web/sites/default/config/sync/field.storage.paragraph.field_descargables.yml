@@ -1,0 +1,23 @@
+uuid: cf729e27-48bd-4e1a-9b5a-dd4c597fb2f1
+langcode: es
+status: true
+dependencies:
+  module:
+    - file
+    - paragraphs
+id: paragraph.field_descargables
+field_name: field_descargables
+entity_type: paragraph
+type: file
+settings:
+  display_field: false
+  display_default: false
+  uri_scheme: public
+  target_type: file
+module: file
+locked: false
+cardinality: -1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

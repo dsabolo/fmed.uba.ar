@@ -1,0 +1,25 @@
+uuid: b1d21722-0478-4dfc-a565-12be184e8d06
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publicar
+    - node.type.agenda
+id: node.agenda.field_publicar
+field_name: field_publicar
+entity_type: node
+bundle: agenda
+label: 'Publicar en carrera'
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: views
+  handler_settings:
+    view:
+      view_name: carreras_que_puede_publicar
+      display_name: entity_reference_1
+      arguments: {  }
+field_type: entity_reference

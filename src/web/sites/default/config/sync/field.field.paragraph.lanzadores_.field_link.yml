@@ -1,0 +1,23 @@
+uuid: f5696416-7f2f-4090-9ad0-1ba3c44d8e08
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_link
+    - paragraphs.paragraphs_type.lanzadores_
+  module:
+    - link
+id: paragraph.lanzadores_.field_link
+field_name: field_link
+entity_type: paragraph
+bundle: lanzadores_
+label: Link
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  link_type: 17
+  title: 2
+field_type: link

@@ -1,0 +1,22 @@
+uuid: a8f80e06-a278-47e8-96f3-b0c2425d9a47
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pagina_de_carrera_
+  module:
+    - text
+id: node.pagina_de_carrera_.body
+field_name: body
+entity_type: node
+bundle: pagina_de_carrera_
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary

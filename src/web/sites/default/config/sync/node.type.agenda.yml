@@ -1,0 +1,18 @@
+uuid: 68af875a-a048-411b-8bde-b3e358f0885c
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - main
+    parent: 'main:'
+name: Agenda
+type: agenda
+description: 'Permite publicar un evento'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

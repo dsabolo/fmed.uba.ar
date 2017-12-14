@@ -1,0 +1,9 @@
+uuid: 62a32767-79d6-4c3a-82a0-16aea221db4f
+langcode: es
+status: true
+dependencies: {  }
+id: galeria_imagenes
+label: 'Galería Imágenes'
+icon_uuid: null
+description: ''
+behavior_plugins: {  }

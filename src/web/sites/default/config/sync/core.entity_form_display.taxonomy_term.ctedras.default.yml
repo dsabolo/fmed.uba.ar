@@ -1,0 +1,64 @@
+uuid: cd42aa19-c7ea-48b1-87fb-d768e3bc9c65
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.ctedras.field_color
+    - field.field.taxonomy_term.ctedras.field_imagen_decorativa_
+    - image.style.thumbnail
+    - taxonomy.vocabulary.ctedras
+  module:
+    - image
+    - path
+    - text
+id: taxonomy_term.ctedras.default
+targetEntityType: taxonomy_term
+bundle: ctedras
+mode: default
+content:
+  description:
+    type: text_textfield
+    weight: 0
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_color:
+    weight: 32
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+    type: string_textfield
+    region: content
+  field_imagen_decorativa_:
+    weight: 31
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+    type: image_image
+    region: content
+  langcode:
+    type: language_select
+    weight: 2
+    region: content
+    settings:
+      include_locked: true
+    third_party_settings: {  }
+  name:
+    type: string_textfield
+    weight: -5
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  path:
+    type: path
+    weight: 30
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden: {  }

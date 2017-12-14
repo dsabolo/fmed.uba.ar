@@ -1,0 +1,26 @@
+uuid: a63ea0b7-e168-4e1b-8d81-ec09a9176293
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: OiRs-169Cahj9zFSqgJ8YdWedN-ZaKPYsaPuXptI7Kc
+id: punut
+label: 'Pulblicador de contenidos nutricion'
+weight: 4
+is_admin: null
+permissions:
+  - 'create pagina_de_carrera_nutricion content'
+  - 'delete any pagina_de_carrera_nutricion content'
+  - 'delete own pagina_de_carrera_nutricion content'
+  - 'delete pagina_de_carrera_nutricion revisions'
+  - 'edit any pagina_de_carrera_nutricion content'
+  - 'edit own pagina_de_carrera_nutricion content'
+  - 'revert pagina_de_carrera_nutricion revisions'
+  - 'use editorial transition archive'
+  - 'use editorial transition archived_draft'
+  - 'use editorial transition archived_published'
+  - 'use editorial transition create_new_draft'
+  - 'use editorial transition publish'
+  - 'view any unpublished content'
+  - 'view latest version'
+  - 'view pagina_de_carrera_nutricion revisions'

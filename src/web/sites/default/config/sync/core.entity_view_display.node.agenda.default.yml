@@ -1,0 +1,56 @@
+uuid: 8e165b5d-4539-4b0d-8adb-974e8b93301a
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.agenda.body
+    - field.field.node.agenda.field_fecha
+    - field.field.node.agenda.field_publicar
+    - field.field.node.agenda.field_visible
+    - node.type.agenda
+  module:
+    - datetime
+    - text
+    - user
+id: node.agenda.default
+targetEntityType: node
+bundle: agenda
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 101
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_fecha:
+    weight: 102
+    label: above
+    settings:
+      format_type: medium
+      timezone_override: ''
+    third_party_settings: {  }
+    type: datetime_default
+    region: content
+  field_publicar:
+    weight: 103
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  field_visible:
+    weight: 104
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    type: entity_reference_label
+    region: content
+  links:
+    weight: 100
+    region: content
+hidden:
+  langcode: true

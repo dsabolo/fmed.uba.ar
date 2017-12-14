@@ -1,0 +1,14 @@
+uuid: c5d2ba98-38d1-4251-9bae-cc7b94520dc5
+langcode: es
+status: true
+dependencies: {  }
+name: bannerportada
+label: bannerPortada
+effects:
+  33710859-0cbd-4e41-a0f6-b1568e3ca5b1:
+    uuid: 33710859-0cbd-4e41-a0f6-b1568e3ca5b1
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 1140
+      height: 450

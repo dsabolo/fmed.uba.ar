@@ -1,0 +1,32 @@
+uuid: 916aa9e8-d0bd-438e-9a61-cdf69174804e
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.menu_interna
+  module:
+    - node
+    - views
+  theme:
+    - newsplus_lite
+id: views_block__menu_interna_block_1
+theme: newsplus_lite
+region: sidebar_second
+weight: -11
+provider: null
+plugin: 'views_block:menu_interna-block_1'
+settings:
+  id: 'views_block:menu_interna-block_1'
+  label: Menú
+  provider: views
+  label_display: visible
+  views_label: Menú
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      pagina_interna: pagina_interna
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,22 @@
+uuid: e49fed1d-c378-447d-a0d4-557b06606435
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.body
+    - node.type.pagina_de_catedra
+  module:
+    - text
+id: node.pagina_de_catedra.body
+field_name: body
+entity_type: node
+bundle: pagina_de_catedra
+label: Body
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings:
+  display_summary: true
+field_type: text_with_summary
