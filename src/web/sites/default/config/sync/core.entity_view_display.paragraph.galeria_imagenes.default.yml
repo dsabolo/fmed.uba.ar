@@ -6,7 +6,7 @@ dependencies:
     - field.field.paragraph.galeria_imagenes.field_galeria_imagenes
     - paragraphs.paragraphs_type.galeria_imagenes
   module:
-    - image
+    - magnific_popup
 id: paragraph.galeria_imagenes.default
 targetEntityType: paragraph
 bundle: galeria_imagenes
@@ -16,9 +16,10 @@ content:
     weight: 0
     label: hidden
     settings:
-      image_style: ''
-      image_link: ''
+      thumbnail_image_style: miniatura
+      popup_image_style: ''
+      gallery_type: all_items
     third_party_settings: {  }
-    type: image
+    type: magnific_popup
     region: content
 hidden: {  }
