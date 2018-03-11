@@ -30,6 +30,7 @@ global-styling:
       css/base/elements.css: { weight: 1 }
       css/base/layout.css: { weight: 1 }
       css/base/font.css: { weight: 1 }
+      css/base/customfmed.css: { weight: 1 }
     component:
       css/components/site-branding.css: {}
       css/components/page-title.css: {}
