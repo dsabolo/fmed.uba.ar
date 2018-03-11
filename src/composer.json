@@ -14,20 +14,6 @@
             "type": "composer",
             "url": "https://packages.drupal.org/8"
         },
-        {
-            "type": "package",
-            "package":
-                {
-                    "name": "fmed/fmed_theme",
-                    "version": "dev-master",
-                    "type":"drupal-custom-theme",
-                    "source": {
-                        "url": "https://github.com/dsabolo/fmed_theme.git",
-                        "type": "git",
-                        "reference": "master"
-                        }
-                }
-            },
             {
                 "type": "package",
                 "package":
@@ -61,7 +47,6 @@
         "drupal/superfish": "^1.1",
         "drupal/views_slideshow": "^4.5",
         "drush/drush": "~8.0|^9.0.0-beta7",
-        "fmed/fmed_theme": "dev-master",
         "webflo/drupal-finder": "^1.0.0",
         "webmozart/path-util": "^2.3"
     },

@@ -1,0 +1,35 @@
+/**
+ * @file
+ * Visual styles for Newsplus Lite's page-title elements.
+ */
+
+.block-page-title-block {
+  padding: 0;
+  margin: 0;
+}
+
+
+.block-views-blocktitulos-carrera-catedra-block-1{
+
+
+}
+.block-views-blocktitulos-carrera-catedra-block-1 h2 {
+  font-size:55px !important;
+  font-weight: 100;
+  background:url(../../images/bgHeaderInternas.jpg?a=1234hh);
+  padding:15px;
+  color:#fff;
+  padding-left:30px;
+  padding-top:100px;
+  padding-bottom: 100px;
+  line-height: 80px;
+  background-size: cover !important;
+  margin-top:0;
+}
+.block-views-blocktitulos-carrera-catedra-block-1 h2 span {
+  padding: 2px;
+  background: #ea722d;
+  opacity: 0.78;
+  padding-left: 10px;
+  padding-right: 10px;
+}

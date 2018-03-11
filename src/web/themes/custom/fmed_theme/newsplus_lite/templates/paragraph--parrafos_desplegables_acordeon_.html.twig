@@ -1,0 +1,8 @@
+{% set tabId = random() %}
+<div class="tab">
+  <input id="tab-{{tabId}}" type="radio" name="tabs">
+  <label for="tab-{{tabId}}">{{content.field_titulo}}</label>
+  <div class="tab-content">
+    {{content.field_contenido_desplegable}}
+  </div>
+</div>

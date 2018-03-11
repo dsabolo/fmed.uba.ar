@@ -1,0 +1,66 @@
+/**
+ * @file
+ * Visual styles for newsplus_lite's image overlay.
+ */
+
+.overlayed {
+  position: relative;
+  overflow: hidden;
+  display: block;
+  max-width: 100%;
+  float: left;
+}
+.overlay {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  filter: alpha(opacity=0);
+  z-index: 2;
+  webkit-transition: opacity 0.2s linear;
+  -moz-transition: opacity 0.2s linear;
+  o-transition: opacity 0.2s linear;
+  transition: opacity 0.2s linear;
+}
+.overlay i {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: auto;
+  font-size: 18px;
+  color: #ffffff;
+  text-align: center;
+  width: 40px;
+  height: 40px;
+  -webkit-transition: all linear 0.2s;
+  -moz-transition: all linear 0.2s;
+  -o-transition: all linear 0.2s;
+   -ms-transition: all linear 0.2s;
+  transition: all linear 0.2s;
+}
+.node--view-mode-teaser .overlay i::before {
+  content: "\f0c1";
+}
+.overlay i:before {
+  line-height: 42px;
+}
+.image-listing-item .overlay i {
+  font-size: 10px;
+  width: 25px;
+  height: 25px;
+}
+.image-listing-item .overlay i:before {
+  line-height: 27px;
+}
+.overlayed:hover {
+  color: #ffffff!important;
+  text-decoration: none;
+}
+.overlayed:hover .overlay {
+  opacity: 1;
+  filter: alpha(opacity=100);
+}

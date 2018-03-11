@@ -1,0 +1,310 @@
+/**
+ * @file
+ * Overall specifications for Newsplus Lite.
+ */
+
+html {
+  height: 100%;
+}
+body {
+  font-size: 16px;
+  color: #3f3f3f;
+  line-height: 1.55;
+  text-rendering: optimizeLegibility;
+  background-color: #fff;
+}
+p {
+  margin: 0;
+  padding: 0 0 15px 0;
+}
+p.large {
+  font-size: 18px;
+  line-height: 1.33;
+  font-weight: 700;
+  padding-bottom: 20px;
+}
+a:hover {
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  text-decoration: underline;
+}
+a:focus,
+a:active {
+  outline: none;
+  text-decoration: none;
+}
+code,
+pre {
+  word-wrap: break-word;
+  word-break: break-all;
+  white-space: pre;
+  white-space: pre-wrap;
+  font-family: 'Source Code Pro', Consolas, Monaco, Courier;
+}
+pre {
+  background: #ebebeb;
+  border:none;
+  border-left: 10px solid;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  color: #363636;
+  padding: 20px;
+  font-size: 14px;
+  max-height: 62px;
+  overflow: hidden;
+  margin: 40px 0 40px 45px;
+}
+pre:hover {
+  max-height: 10000px;
+  -webkit-transition: all ease-in-out 2s;
+  -moz-transition: all ease-in-out 2s;
+  -o-transition: all ease-in-out 2s;
+  -ms-transition: all ease-in-out 2s;
+  transition: all ease-in-out 2s;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+blockquote {
+  font-size: 24px;
+  font-style: italic;
+  padding:0 0 0 140px;
+  border-left: none;
+  position: relative;
+  margin: 40px 0 50px;
+  line-height: 1.33;
+  min-height: 80px;
+}
+.footer-area blockquote,
+.subfooter-area blockquote,
+.sidebar blockquote {
+  padding-left: 80px;
+}
+
+/* Blockquote quote symbol */
+blockquote:after {
+  position: absolute;
+  content: "“";
+  left: 15px;
+  color: #dddddd;
+  font-style: normal;
+  font-size: 280px;
+  line-height: 0.8;
+  height: 100%;
+  top: 0;
+}
+.footer-area blockquote:after,
+.subfooter-area blockquote:after,
+.sidebar blockquote:after {
+  left: 0;
+  font-size: 190px;
+}
+@media (min-width: 992px) {
+  .two-sidebars blockquote {
+    padding: 0 0 0 80px;
+  }
+  .two-sidebars blockquote:after {
+    left: 0;
+    font-size: 190px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .footer-area blockquote,
+  .subfooter-area blockquote,
+  .sidebar blockquote {
+    padding-left: 40px;
+    font-size: 18px;
+  }
+  .footer-area blockquote:after,
+  .subfooter-area blockquote:after,
+  .sidebar blockquote:after {
+    left: 0;
+    font-size: 90px;
+  }
+}
+@media (max-width: 767px) {
+  blockquote {
+    padding: 0 0 0 80px;
+  }
+  blockquote:after {
+    left: 0;
+    font-size: 190px;
+  }
+}
+ul {
+  list-style-type: square;
+}
+ul.list li {
+  margin-bottom: 5px;
+}
+.colored-area {
+  color: #ffffff;
+}
+.colored-area legend{
+  color: #ffffff;
+}
+
+/**
+ * Reusable heading classes are included to help modules change the styling of
+ * headings on a page without affecting accessibility.
+ */
+/* Headings */
+h1, h2, h3, h4, h5, h6,
+.heading-a,
+.heading-b,
+.heading-c,
+.heading-d,
+.heading-e {
+  font-weight: 700;
+  line-height: 1.2;
+  margin: 20px 0 10px 0;
+}
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a,
+.heading-a > a,
+.heading-b > a,
+.heading-c > a,
+.heading-d > a,
+.heading-e > a {
+  color: #3f3f3f;
+}
+h1,
+.heading-a {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+h2,
+.heading-b {
+  font-size: 28px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+h3,
+.heading-c {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+h4,
+.heading-d {
+  font-size: 18px;
+}
+h5,
+.heading-e {
+  font-size: 16px;
+}
+.title {
+  margin-top: 0
+}
+.sidebar .block > h2,
+#page .block-views h2.title {
+  font-size: 18px;
+}
+.node--view-mode-teaser h2.node__title,
+.node--view-mode-teaser h2.node__title {
+  font-weight: 700;
+}
+.sidebar h3.title {
+  margin-top: 9px;
+}
+.footer-area .block > h2,
+.subfooter-area .block > h2 {
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+@media (max-width: 767px) {
+ .node h1.title {
+    font-size: 36px;
+  }
+}
+del {
+  text-decoration: line-through;
+}
+.feed-icon {
+  display: block;
+  margin: 25px 0 0 0;
+}
+
+
+
+/*Acordeones*/
+
+/* Acordeon styles */
+.tab {
+  position: relative;
+  margin-bottom: 1px;
+  width: 100%;
+  color: #fff;
+  overflow: hidden;
+}
+.tab input {
+  position: absolute;
+  opacity: 0;
+  z-index: -1;
+}
+.tab label {
+  position: relative;
+  display: block;
+  background: #fff;
+  color:#000;
+  border-bottom:1px solid #000;
+  font-weight: bold;
+  line-height: 3;
+  cursor: pointer;
+
+}
+.tab .blue label {
+  background: #2980b9;
+}
+.tab .tab-content {
+  max-height: 0;
+  overflow: hidden;
+  background: #fff;
+  -webkit-transition: max-height .35s;
+  -o-transition: max-height .35s;
+  transition: max-height .35s;
+  color:#000 !important
+
+}
+.tab .blue .tab-content {
+  background: #3498db;
+}
+.tab .tab-content p {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+/* :checked */
+.tab input:checked ~ .tab-content {
+  max-height: fit-content;
+}
+/* Icon */
+.tab label::after {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: block;
+  width: 3em;
+  height: 3em;
+  line-height: 3;
+  text-align: center;
+  -webkit-transition: all .35s;
+  -o-transition: all .35s;
+  transition: all .35s;
+}
+.tab input[type=radio] + label::after {
+  content: "+";
+}
+.tab input[type=checkbox] + label::after {
+  content: "\25BC";
+}
+.tab input[type=radio]:checked + label::after {
+  transform: rotate(315deg);
+}
+.tab input[type=checkbox]:checked + label::after {
+  transform: rotateX(180deg);
+}
+
+

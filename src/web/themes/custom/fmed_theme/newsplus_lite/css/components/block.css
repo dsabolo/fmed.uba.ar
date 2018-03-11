@@ -1,0 +1,39 @@
+/**
+ * @file
+ * Visual styles for Newsplus Lite's blocks.
+ */
+
+/*Blocks*/
+.block {
+  padding: 0 0 25px 0;
+}
+.header-area .block,
+.pre-header-area .block {
+  padding: 0 0 10px;
+}
+#highlighted .block {
+  padding: 15px 0 10px;
+}
+.sidebar .block {
+  background: #fafafa;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  padding: 10px;
+
+}
+.footer-area .block {
+  padding: 0 0 35px 0;
+}
+.subfooter-area .block {
+  padding: 10px 0;
+}
+#pre-header .block-superfish.block,
+#main-navigation .block-superfish.block,
+#main-navigation .block-menu.block,
+.block.block-page-title-block,
+.block.block-system-breadcrumb-block {
+  padding: 0;
+}
+#pre-header .block-superfish.block {
+  min-height: 48px;
+}
