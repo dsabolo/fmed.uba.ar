@@ -103,7 +103,7 @@
         <div id="header-top-inside" class="clearfix">
           <div class="row">
             {% if page.header_top_left %}
-              <div class="{{ header_top_inside_grid_class }}">
+              <div class="{{ header_top_inside_grid_class }} col-sm-6">
                 {# #header-top-left #}
                 <div id="header-top-left" class="clearfix">
                   <div class="header-top-area">
@@ -118,7 +118,7 @@
               </div>
             {% endif %}
             {% if page.header_top_right %}
-              <div class="{{ header_top_inside_grid_class }}">
+              <div class="{{ header_top_inside_grid_class }} col-sm-6">
                 {# #header-top-right #}
                 <div id="header-top-right" class="clearfix">
                   <div class="header-top-area">
@@ -222,8 +222,16 @@
         </div>
         {# EOF: #top-content #}
       {% endif %}
-
-      {# #main-content #}
+<div class="row">	
+	<div class="col col-md-4 col-sm-4 homeblock">{{ page.launcher1 }}</div>
+	<div class="col col-md-4 col-sm-4 homeblock">{{ page.launcher2 }}</div>
+	<div class="col col-md-4 col-sm-4 homeblock">{{ page.launcher3 }}</div>
+</div>
+<div class="row">	
+<div class="col col-md-8 homeblock">{{ page.r70 }}</div>
+	<div class="col col-md-4 homeblock">{{ page.r30 }}</div>
+</div>
+	{# #main-content #}
       <div id="main-content">
         <div class="row">
           {% if page.sidebar_first %}
@@ -292,6 +300,12 @@
           {% endif %}
 
         </div>
+
+	
+	<div class="col col-md-4">{{ page.footerLauncher1 }}</div>
+	<div class="col col-md-4">{{ page.footerLauncher2 }}</div>
+	<div class="col col-md-4">{{ page.footerLauncher3 }}</div>
+      
 
       </div>
       {# EOF:#main-content #}
