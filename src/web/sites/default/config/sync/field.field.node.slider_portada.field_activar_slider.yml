@@ -1,0 +1,23 @@
+uuid: 0c9c6ef6-36ff-4951-a53f-6a3cd83514af
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_activar_slider
+    - node.type.slider_portada
+id: node.slider_portada.field_activar_slider
+field_name: field_activar_slider
+entity_type: node
+bundle: slider_portada
+label: 'Activar Slider'
+description: ''
+required: false
+translatable: false
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

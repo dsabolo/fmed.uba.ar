@@ -1,0 +1,22 @@
+uuid: 07200cf7-fa4c-4832-8dbf-2d5aea496f25
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: carreras
+label: Carreras
+type: 'canonical_entities:node'
+pattern: 'carreras/[node:field_publicar][node:field_publica_en_seccion][node:field_visible]/[node:title]'
+selection_criteria:
+  9ed9f90a-7183-4378-898e-c0046f2fb5e9:
+    id: node_type
+    bundles:
+      pagina_de_carrera_: pagina_de_carrera_
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 9ed9f90a-7183-4378-898e-c0046f2fb5e9
+selection_logic: and
+weight: -5
+relationships: {  }

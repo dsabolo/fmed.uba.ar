@@ -1,0 +1,43 @@
+uuid: 74bbd41c-b787-4dd7-9d83-87a23d118cfb
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.publicacion_de_extension_univers.body
+    - field.field.node.publicacion_de_extension_univers.field_image
+    - node.type.publicacion_de_extension_univers
+  module:
+    - image
+    - text
+    - user
+id: node.publicacion_de_extension_univers.teaser
+targetEntityType: node
+bundle: publicacion_de_extension_univers
+mode: teaser
+content:
+  body:
+    label: hidden
+    type: text_summary_or_trimmed
+    weight: 1
+    settings:
+      trim_length: 600
+    third_party_settings: {  }
+    region: content
+  field_image:
+    type: image
+    weight: 0
+    region: content
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  langcode: true

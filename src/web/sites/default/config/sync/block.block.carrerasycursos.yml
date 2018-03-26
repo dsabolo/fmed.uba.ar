@@ -1,0 +1,31 @@
+uuid: 59168bbb-d2aa-4345-83f5-def99eac3609
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:f17c21e7-f223-4e7b-9bb9-7f7604d347e7'
+  module:
+    - block_content
+    - system
+  theme:
+    - newsplus_lite
+id: carrerasycursos
+theme: newsplus_lite
+region: launcher2
+weight: -12
+provider: null
+plugin: 'block_content:f17c21e7-f223-4e7b-9bb9-7f7604d347e7'
+settings:
+  id: 'block_content:f17c21e7-f223-4e7b-9bb9-7f7604d347e7'
+  label: 'Carreras y Cursos'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

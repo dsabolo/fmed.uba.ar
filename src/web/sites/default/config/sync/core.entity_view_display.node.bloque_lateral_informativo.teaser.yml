@@ -27,7 +27,4 @@ content:
     region: content
 hidden:
   addtoany: true
-  field_publica_en_seccion: true
-  field_publicar: true
-  field_visible: true
   langcode: true

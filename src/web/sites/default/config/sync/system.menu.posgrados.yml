@@ -3,6 +3,6 @@ langcode: es
 status: true
 dependencies: {  }
 id: posgrados
-label: Posgrados
+label: 'Sitios de Interés'
 description: ''
 locked: false

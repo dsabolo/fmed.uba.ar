@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.bloque_lateral_informativo.body
+    - field.field.node.bloque_lateral_informativo.field_peso
     - field.field.node.bloque_lateral_informativo.field_publica_en_seccion
     - field.field.node.bloque_lateral_informativo.field_publicar
     - field.field.node.bloque_lateral_informativo.field_visible
@@ -32,6 +33,13 @@ content:
     region: content
     settings: {  }
     third_party_settings: {  }
+  field_peso:
+    weight: 125
+    settings:
+      placeholder: ''
+    third_party_settings: {  }
+    type: number
+    region: content
   field_publica_en_seccion:
     weight: 122
     settings:

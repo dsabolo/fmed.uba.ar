@@ -1,0 +1,12 @@
+uuid: a0e3b079-22b1-4a9e-9a0d-278055958317
+langcode: es
+status: true
+dependencies: {  }
+id: usuario_cartelera
+label: 'Usuario Cartelera'
+weight: 7
+is_admin: null
+permissions:
+  - 'create publicaciones_cartelera content'
+  - 'delete own publicaciones_cartelera content'
+  - 'edit any publicaciones_cartelera content'

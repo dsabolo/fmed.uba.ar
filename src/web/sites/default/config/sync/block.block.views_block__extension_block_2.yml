@@ -1,0 +1,30 @@
+uuid: 70acd4a1-c06e-4c4b-b35f-f8c180b915cb
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.extension
+  module:
+    - system
+    - views
+  theme:
+    - newsplus_lite
+id: views_block__extension_block_2
+theme: newsplus_lite
+region: sidebar_second
+weight: -10
+provider: null
+plugin: 'views_block:extension-block_2'
+settings:
+  id: 'views_block:extension-block_2'
+  label: Publicaciones
+  provider: views
+  label_display: visible
+  views_label: Publicaciones
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: "/secretaria-de-extension-universitaria\r\n/secretaria-de-extension-universitaria/*"
+    negate: false
+    context_mapping: {  }

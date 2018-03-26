@@ -1,0 +1,32 @@
+uuid: f1e3dfcd-9bb0-4919-b553-557b45c89322
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.extension
+  module:
+    - node
+    - views
+  theme:
+    - newsplus_lite
+id: views_block__extension_block_2_2
+theme: newsplus_lite
+region: sidebar_second
+weight: -9
+provider: null
+plugin: 'views_block:extension-block_2'
+settings:
+  id: 'views_block:extension-block_2'
+  label: Publicaciones
+  provider: views
+  label_display: visible
+  views_label: Publicaciones
+  items_per_page: none
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      publicacion_de_extension_univers: publicacion_de_extension_univers
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'

@@ -1,0 +1,25 @@
+uuid: 08377bfc-e8ac-4e6b-ba98-85c9849da439
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:6775cfe2-8562-4e8a-bac3-93c9afea2a9d'
+  module:
+    - block_content
+  theme:
+    - newsplus_lite
+id: contacto
+theme: newsplus_lite
+region: footer_fourth
+weight: 0
+provider: null
+plugin: 'block_content:6775cfe2-8562-4e8a-bac3-93c9afea2a9d'
+settings:
+  id: 'block_content:6775cfe2-8562-4e8a-bac3-93c9afea2a9d'
+  label: CONTACTO
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

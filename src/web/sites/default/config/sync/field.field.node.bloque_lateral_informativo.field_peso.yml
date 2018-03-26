@@ -1,0 +1,23 @@
+uuid: 79d62a03-b444-458e-8f58-95988745ddf7
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_peso
+    - node.type.bloque_lateral_informativo
+id: node.bloque_lateral_informativo.field_peso
+field_name: field_peso
+entity_type: node
+bundle: bloque_lateral_informativo
+label: Orden
+description: 'Indique un número entero. Si hay varios bloques para el mismo espacio, arriba se mostrarán aquellos con un número menor.'
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  min: 0
+  max: null
+  prefix: ''
+  suffix: ''
+field_type: integer

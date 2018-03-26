@@ -1,0 +1,31 @@
+uuid: d70b5b4b-e207-4220-9a62-4c5268c5926d
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:da6d2c07-f0f7-448e-9ba3-7a1ac3dadebc'
+  module:
+    - block_content
+    - system
+  theme:
+    - newsplus_lite
+id: inscripciones
+theme: newsplus_lite
+region: launcher1
+weight: 0
+provider: null
+plugin: 'block_content:da6d2c07-f0f7-448e-9ba3-7a1ac3dadebc'
+settings:
+  id: 'block_content:da6d2c07-f0f7-448e-9ba3-7a1ac3dadebc'
+  label: Inscripciones
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

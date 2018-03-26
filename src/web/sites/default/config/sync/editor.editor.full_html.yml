@@ -19,8 +19,13 @@ settings:
           items:
             - Bold
             - Italic
+            - Underline
             - Strike
             - Superscript
+            - JustifyLeft
+            - JustifyCenter
+            - JustifyBlock
+            - JustifyRight
             - Subscript
             - '-'
             - RemoveFormat
@@ -34,6 +39,8 @@ settings:
           items:
             - BulletedList
             - NumberedList
+            - Outdent
+            - Indent
         -
           name: Media
           items:
@@ -50,16 +57,17 @@ settings:
           items:
             - ShowBlocks
             - Source
+            - PasteFromWord
   plugins:
-    language:
-      language_list: un
     stylescombo:
       styles: ''
+    language:
+      language_list: un
 image_upload:
   status: true
   scheme: public
   directory: inline-images
-  max_size: ''
+  max_size: '5 Mb'
   max_dimensions:
     width: null
     height: null

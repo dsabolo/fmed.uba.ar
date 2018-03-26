@@ -1,0 +1,14 @@
+uuid: 7755a0b4-9d70-45ac-b498-edb672d9f6b0
+langcode: es
+status: true
+dependencies: {  }
+name: muy_grande
+label: 'Muy Grande'
+effects:
+  f5db269a-bcdc-4632-8677-acc3424edd98:
+    uuid: f5db269a-bcdc-4632-8677-acc3424edd98
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 920
+      height: 920

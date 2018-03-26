@@ -1,0 +1,43 @@
+uuid: 69a6af44-f3b1-4e3f-9ade-6e5296aaba81
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.publicacion_de_extension_univers.body
+    - field.field.node.publicacion_de_extension_univers.field_image
+    - field.field.node.publicacion_de_extension_univers.field_publica_en_seccion
+    - node.type.publicacion_de_extension_univers
+  module:
+    - image
+    - text
+    - user
+id: node.publicacion_de_extension_univers.default
+targetEntityType: node
+bundle: publicacion_de_extension_univers
+mode: default
+content:
+  body:
+    label: hidden
+    type: text_default
+    weight: 1
+    settings: {  }
+    third_party_settings: {  }
+    region: content
+  field_image:
+    weight: 0
+    label: hidden
+    settings:
+      image_style: ''
+      image_link: ''
+    third_party_settings: {  }
+    type: image
+    region: content
+  links:
+    weight: 2
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+hidden:
+  addtoany: true
+  field_publica_en_seccion: true
+  langcode: true

@@ -27,9 +27,10 @@ visibility:
   node_type:
     id: node_type
     bundles:
+      pagina_interna: pagina_interna
+      publicacion_de_extension_univers: publicacion_de_extension_univers
       pagina_de_carrera_: pagina_de_carrera_
       pagina_de_catedra: pagina_de_catedra
-      pagina_interna: pagina_interna
     negate: false
     context_mapping:
       node: '@node.node_route_context:node'

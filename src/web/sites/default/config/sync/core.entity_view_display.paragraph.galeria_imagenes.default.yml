@@ -16,7 +16,7 @@ content:
     weight: 0
     label: hidden
     settings:
-      thumbnail_image_style: miniatura
+      thumbnail_image_style: ''
       popup_image_style: ''
       gallery_type: all_items
     third_party_settings: {  }

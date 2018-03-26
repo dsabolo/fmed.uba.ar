@@ -1,0 +1,14 @@
+uuid: 4f100b7d-d24e-457d-b34d-9cc0a09a7071
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.creador
+  module:
+    - user
+id: user_add_role_action.creador
+label: 'Add the Creador (Edita y crea, no publica) role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: creador

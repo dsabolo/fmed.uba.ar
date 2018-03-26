@@ -2,6 +2,8 @@ uuid: a1182edc-c25e-489d-831c-287ffd10bcba
 langcode: es
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - newsplus_lite
 _core:
@@ -17,4 +19,9 @@ settings:
   label: 'Primary admin actions'
   provider: core
   label_display: '0'
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

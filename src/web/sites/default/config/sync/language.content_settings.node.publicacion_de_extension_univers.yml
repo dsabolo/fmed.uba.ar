@@ -1,0 +1,11 @@
+uuid: 6137fd26-3206-4095-ba6e-f105c695dcd5
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.publicacion_de_extension_univers
+id: node.publicacion_de_extension_univers
+target_entity_type_id: node
+target_bundle: publicacion_de_extension_univers
+default_langcode: site_default
+language_alterable: false

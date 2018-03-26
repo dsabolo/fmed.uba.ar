@@ -1,0 +1,31 @@
+uuid: 986a5c22-7351-4941-a025-e411534cdce2
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:5bca8b96-d944-46e2-aeea-3870465d12df'
+  module:
+    - block_content
+    - system
+  theme:
+    - newsplus_lite
+id: posgrado
+theme: newsplus_lite
+region: launcher3
+weight: 0
+provider: null
+plugin: 'block_content:5bca8b96-d944-46e2-aeea-3870465d12df'
+settings:
+  id: 'block_content:5bca8b96-d944-46e2-aeea-3870465d12df'
+  label: Posgrado
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

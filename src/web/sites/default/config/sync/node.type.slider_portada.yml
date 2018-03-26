@@ -9,9 +9,9 @@ third_party_settings:
     available_menus:
       - main
     parent: 'main:'
-name: 'Slider Portada'
+name: 'Publicación Prensa'
 type: slider_portada
-description: 'Permite agregar un Slider en la portada del sitio'
+description: 'Permite agregar contenido a la sección prensa y  promocionar slider en la portada.'
 help: ''
 new_revision: false
 preview_mode: 1

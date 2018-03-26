@@ -1,0 +1,16 @@
+uuid: d51c554b-99ab-4f42-af86-bfd8c2ba68a7
+langcode: es
+status: true
+dependencies: {  }
+id: usuario_prensa
+label: 'Usuario Prensa'
+weight: 8
+is_admin: null
+permissions:
+  - 'access content overview'
+  - 'access toolbar'
+  - 'create slider_portada content'
+  - 'delete any slider_portada content'
+  - 'delete own slider_portada content'
+  - 'edit any slider_portada content'
+  - 'edit own slider_portada content'

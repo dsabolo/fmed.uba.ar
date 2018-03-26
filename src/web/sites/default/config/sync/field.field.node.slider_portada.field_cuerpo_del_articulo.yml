@@ -1,0 +1,21 @@
+uuid: 3e011a76-d1b5-45a9-a7cd-6e9307f0615f
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_cuerpo_del_articulo
+    - node.type.slider_portada
+  module:
+    - text
+id: node.slider_portada.field_cuerpo_del_articulo
+field_name: field_cuerpo_del_articulo
+entity_type: node
+bundle: slider_portada
+label: 'Cuerpo del artículo'
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: text_long

@@ -12,7 +12,7 @@ field_name: field_imagen
 entity_type: node
 bundle: slider_portada
 label: 'Imagen del Slider'
-description: ''
+description: 'La imagen se usa para el slider cuando este esta activo o para el listado de la sección prensa. Por lo que es recomendable siempre incluir una imagen.'
 required: false
 translatable: false
 default_value: {  }

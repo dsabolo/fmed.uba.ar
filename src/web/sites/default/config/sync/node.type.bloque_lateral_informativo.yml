@@ -11,7 +11,7 @@ third_party_settings:
     parent: 'main:'
 name: 'Bloque Lateral Informativo'
 type: bloque_lateral_informativo
-description: ''
+description: 'Permite agregar un bloque de texto HTML con información a uno de sus espacios'
 help: ''
 new_revision: false
 preview_mode: 0

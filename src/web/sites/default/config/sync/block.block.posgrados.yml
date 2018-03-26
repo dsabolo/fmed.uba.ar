@@ -16,7 +16,7 @@ provider: null
 plugin: 'system_menu_block:posgrados'
 settings:
   id: 'system_menu_block:posgrados'
-  label: Posgrados
+  label: 'Enlaces de Interés'
   provider: system
   label_display: visible
   level: 1

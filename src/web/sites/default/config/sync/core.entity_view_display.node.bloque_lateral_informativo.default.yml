@@ -4,6 +4,7 @@ status: true
 dependencies:
   config:
     - field.field.node.bloque_lateral_informativo.body
+    - field.field.node.bloque_lateral_informativo.field_peso
     - field.field.node.bloque_lateral_informativo.field_publica_en_seccion
     - field.field.node.bloque_lateral_informativo.field_publicar
     - field.field.node.bloque_lateral_informativo.field_visible
@@ -19,12 +20,12 @@ content:
   body:
     label: hidden
     type: text_default
-    weight: 101
+    weight: 1
     settings: {  }
     third_party_settings: {  }
     region: content
   field_publica_en_seccion:
-    weight: 102
+    weight: 2
     label: above
     settings:
       link: true
@@ -32,7 +33,7 @@ content:
     type: entity_reference_label
     region: content
   field_publicar:
-    weight: 103
+    weight: 3
     label: above
     settings:
       link: true
@@ -40,7 +41,7 @@ content:
     type: entity_reference_label
     region: content
   field_visible:
-    weight: 104
+    weight: 4
     label: above
     settings:
       link: true
@@ -48,8 +49,11 @@ content:
     type: entity_reference_label
     region: content
   links:
-    weight: 100
+    weight: 0
     region: content
+    settings: {  }
+    third_party_settings: {  }
 hidden:
   addtoany: true
+  field_peso: true
   langcode: true

@@ -1,0 +1,27 @@
+uuid: c191465b-1de3-437c-80b1-0b5d88236d51
+langcode: es
+status: true
+dependencies: {  }
+id: creador
+label: 'Creador (Edita y crea, no publica)'
+weight: 6
+is_admin: null
+permissions:
+  - 'create agenda content'
+  - 'create bloque_lateral_informativo content'
+  - 'create boletin_informativo content'
+  - 'create link_externo content'
+  - 'create pagina_de_carrera_ content'
+  - 'create pagina_de_catedra content'
+  - 'create pagina_interna content'
+  - 'create publicaciones_cartelera content'
+  - 'edit any agenda content'
+  - 'edit any bloque_lateral_informativo content'
+  - 'edit any boletin_informativo content'
+  - 'edit any link_externo content'
+  - 'edit any pagina_de_carrera_ content'
+  - 'edit any pagina_de_catedra content'
+  - 'edit any pagina_interna content'
+  - 'edit any publicaciones_cartelera content'
+  - 'use editorial transition create_new_draft'
+  - 'view any unpublished content'

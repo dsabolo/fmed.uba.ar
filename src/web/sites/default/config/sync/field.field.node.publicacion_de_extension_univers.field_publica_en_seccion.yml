@@ -1,0 +1,33 @@
+uuid: 21c2fff0-7343-4692-875f-39cb04d7b5e3
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.node.field_publica_en_seccion
+    - node.type.publicacion_de_extension_univers
+    - taxonomy.vocabulary.estructura_general
+  content:
+    - 'taxonomy_term:estructura_general:c05a9664-3a3a-4e24-bb99-5b780966abd4'
+id: node.publicacion_de_extension_univers.field_publica_en_seccion
+field_name: field_publica_en_seccion
+entity_type: node
+bundle: publicacion_de_extension_univers
+label: 'Publica en sección'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    target_uuid: c05a9664-3a3a-4e24-bb99-5b780966abd4
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      estructura_general: estructura_general
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

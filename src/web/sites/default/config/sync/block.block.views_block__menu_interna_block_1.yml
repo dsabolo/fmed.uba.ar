@@ -12,7 +12,7 @@ dependencies:
 id: views_block__menu_interna_block_1
 theme: newsplus_lite
 region: sidebar_second
-weight: -11
+weight: -16
 provider: null
 plugin: 'views_block:menu_interna-block_1'
 settings:
@@ -26,6 +26,7 @@ visibility:
   node_type:
     id: node_type
     bundles:
+      publicacion_de_extension_univers: publicacion_de_extension_univers
       pagina_interna: pagina_interna
     negate: false
     context_mapping:

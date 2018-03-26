@@ -1,0 +1,22 @@
+uuid: 5773a5ee-b1a9-426f-b14d-895c1e480ab5
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: internas
+label: Internas
+type: 'canonical_entities:node'
+pattern: '[node:field_publicar][node:field_publica_en_seccion][node:field_visible]/[node:title]'
+selection_criteria:
+  40252216-c2c1-4abf-b7f0-5da57c777b42:
+    id: node_type
+    bundles:
+      pagina_interna: pagina_interna
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 40252216-c2c1-4abf-b7f0-5da57c777b42
+selection_logic: and
+weight: -5
+relationships: {  }

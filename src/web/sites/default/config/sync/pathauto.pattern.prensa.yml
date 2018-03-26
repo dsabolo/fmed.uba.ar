@@ -1,0 +1,22 @@
+uuid: 90f6f988-5797-4aa7-8755-8832f0521ab4
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: prensa
+label: prensa
+type: 'canonical_entities:node'
+pattern: 'prensa/[node:title]'
+selection_criteria:
+  57eaa5e2-2e71-43e4-9034-8ea49cf7fd38:
+    id: node_type
+    bundles:
+      slider_portada: slider_portada
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 57eaa5e2-2e71-43e4-9034-8ea49cf7fd38
+selection_logic: and
+weight: -5
+relationships: {  }

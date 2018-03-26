@@ -1,0 +1,14 @@
+uuid: 291c8ce9-f3fc-4d09-a7e1-52ff721b2391
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.creador
+  module:
+    - user
+id: user_remove_role_action.creador
+label: 'Remove the Creador (Edita y crea, no publica) role from the selected user(s)'
+type: user
+plugin: user_remove_role_action
+configuration:
+  rid: creador

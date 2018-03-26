@@ -3,27 +3,29 @@ langcode: es
 status: true
 dependencies:
   config:
-    - field.field.node.slider_portada.field_bajada
+    - field.field.node.slider_portada.field_activar_slider
     - field.field.node.slider_portada.field_color_destaque
+    - field.field.node.slider_portada.field_cuerpo_del_articulo
     - field.field.node.slider_portada.field_imagen
-    - field.field.node.slider_portada.field_link
     - node.type.slider_portada
   module:
     - image
-    - link
+    - text
     - user
 id: node.slider_portada.default
 targetEntityType: node
 bundle: slider_portada
 mode: default
 content:
-  field_bajada:
-    weight: 103
+  field_activar_slider:
+    weight: 106
     label: above
     settings:
-      link_to_entity: false
+      format: default
+      format_custom_false: ''
+      format_custom_true: ''
     third_party_settings: {  }
-    type: string
+    type: boolean
     region: content
   field_color_destaque:
     weight: 104
@@ -33,6 +35,13 @@ content:
     third_party_settings: {  }
     type: string
     region: content
+  field_cuerpo_del_articulo:
+    weight: 105
+    label: above
+    settings: {  }
+    third_party_settings: {  }
+    type: text_default
+    region: content
   field_imagen:
     weight: 101
     label: above
@@ -41,18 +50,6 @@ content:
       image_link: ''
     third_party_settings: {  }
     type: image
-    region: content
-  field_link:
-    weight: 102
-    label: above
-    settings:
-      trim_length: 80
-      url_only: false
-      url_plain: false
-      rel: ''
-      target: ''
-    third_party_settings: {  }
-    type: link
     region: content
   links:
     weight: 100

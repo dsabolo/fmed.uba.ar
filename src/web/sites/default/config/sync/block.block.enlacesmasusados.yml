@@ -1,0 +1,24 @@
+uuid: e31fa07d-1a4a-4823-824e-df2f78aa023d
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.enlaces-mas-usados
+  module:
+    - system
+  theme:
+    - newsplus_lite
+id: enlacesmasusados
+theme: newsplus_lite
+region: footer_second
+weight: 0
+provider: null
+plugin: 'system_menu_block:enlaces-mas-usados'
+settings:
+  id: 'system_menu_block:enlaces-mas-usados'
+  label: 'Enlaces más usados'
+  provider: system
+  label_display: visible
+  level: 1
+  depth: 0
+visibility: {  }

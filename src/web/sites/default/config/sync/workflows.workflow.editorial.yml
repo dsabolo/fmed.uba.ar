@@ -2,6 +2,15 @@ uuid: 17acca3d-5f68-4d6e-badd-f829129c8209
 langcode: es
 status: true
 dependencies:
+  config:
+    - node.type.agenda
+    - node.type.bloque_lateral_informativo
+    - node.type.boletin_informativo
+    - node.type.link_externo
+    - node.type.pagina_de_carrera_
+    - node.type.pagina_de_catedra
+    - node.type.pagina_interna
+    - node.type.publicaciones_cartelera
   module:
     - content_moderation
 _core:
@@ -11,52 +20,38 @@ label: Editorial
 type: content_moderation
 type_settings:
   states:
-    archived:
-      label: Archived
-      weight: 5
-      published: false
-      default_revision: true
     draft:
-      label: Draft
       published: false
       default_revision: false
+      label: Borrador
       weight: -5
     published:
-      label: Published
       published: true
       default_revision: true
+      label: Publicar
       weight: 0
   transitions:
-    archive:
-      label: Archive
-      from:
-        - published
-      to: archived
-      weight: 2
-    archived_draft:
-      label: 'Restore to Draft'
-      from:
-        - archived
-      to: draft
-      weight: 3
-    archived_published:
-      label: Restore
-      from:
-        - archived
-      to: published
-      weight: 4
     create_new_draft:
-      label: 'Create New Draft'
+      label: 'Crear nuevo borrador'
       to: draft
       weight: 0
       from:
         - draft
         - published
     publish:
-      label: Publish
+      label: Publicar
       to: published
       weight: 1
       from:
         - draft
         - published
-  entity_types: {  }
+  entity_types:
+    node:
+      - agenda
+      - bloque_lateral_informativo
+      - boletin_informativo
+      - link_externo
+      - pagina_de_carrera_
+      - pagina_de_catedra
+      - pagina_interna
+      - publicaciones_cartelera

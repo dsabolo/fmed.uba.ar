@@ -1,0 +1,14 @@
+uuid: df09e5aa-66f1-41b5-81ea-2a8dfb8f6fc7
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.usuario_prensa
+  module:
+    - user
+id: user_add_role_action.usuario_prensa
+label: 'Add the Usuario Prensa role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: usuario_prensa

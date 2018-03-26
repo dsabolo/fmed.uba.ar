@@ -1,0 +1,31 @@
+uuid: 59bc1c4a-ec4a-4801-8dde-7d9b5057e274
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:31cc5a02-800e-4f90-bb40-d6754e7b1c6a'
+  module:
+    - block_content
+    - system
+  theme:
+    - newsplus_lite
+id: lanzadorfooter3
+theme: newsplus_lite
+region: footerLauncher3
+weight: 0
+provider: null
+plugin: 'block_content:31cc5a02-800e-4f90-bb40-d6754e7b1c6a'
+settings:
+  id: 'block_content:31cc5a02-800e-4f90-bb40-d6754e7b1c6a'
+  label: 'Lanzador Footer 3'
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

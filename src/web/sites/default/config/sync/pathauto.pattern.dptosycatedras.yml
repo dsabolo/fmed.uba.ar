@@ -1,0 +1,22 @@
+uuid: 64a979e7-e137-42b5-8217-3b0ac0b8e60b
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: dptosycatedras
+label: DptosYCatedras
+type: 'canonical_entities:node'
+pattern: 'departamentos_y_catedras/[node:field_publicar][node:field_publica_en_seccion][node:field_visible]/[node:title]'
+selection_criteria:
+  341fbc70-6234-4888-bccd-95992c4c1b17:
+    id: node_type
+    bundles:
+      pagina_de_catedra: pagina_de_catedra
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 341fbc70-6234-4888-bccd-95992c4c1b17
+selection_logic: and
+weight: -5
+relationships: {  }

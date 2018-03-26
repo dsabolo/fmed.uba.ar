@@ -241,7 +241,19 @@ display:
           entity_type: node
           entity_field: type
           plugin_id: bundle
-      sorts: {  }
+      sorts:
+        field_peso_value:
+          id: field_peso_value
+          table: node__field_peso
+          field: field_peso_value
+          relationship: none
+          group_type: group
+          admin_label: ''
+          order: ASC
+          exposed: false
+          expose:
+            label: ''
+          plugin_id: standard
       title: 'Bloques Laterales'
       header: {  }
       footer: {  }

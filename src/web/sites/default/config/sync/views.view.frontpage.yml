@@ -11,9 +11,9 @@ dependencies:
 _core:
   default_config_hash: GNfx9kN8-0_KgQ-xf3fjdXCCzZwXCI8T0IPFW8SIe7g
 id: frontpage
-label: Frontpage
+label: 'Página principal'
 module: node
-description: 'All content promoted to the front page.'
+description: 'Todo el contenido promovido a la página principal.'
 tag: default
 base_table: node_field_data
 base_field: nid
@@ -31,7 +31,7 @@ display:
       empty:
         area_text_custom:
           admin_label: ''
-          content: 'No front page content has been created yet.'
+          content: 'Todavía no se ha creado contenido para la portada.'
           empty: true
           field: area_text_custom
           group_type: group
@@ -61,12 +61,12 @@ display:
           admin_label: ''
           label: ''
           empty: true
-          title: 'Welcome to [site:name]'
+          title: 'Bienvenido a [site:name]'
           plugin_id: title
       exposed_form:
         type: basic
         options:
-          submit_button: Apply
+          submit_button: Aplicar
           reset_button: false
           reset_button_label: Reset
           exposed_sorts_label: 'Sort by'
@@ -172,14 +172,14 @@ display:
           total_pages: 0
           expose:
             items_per_page: false
-            items_per_page_label: 'Items per page'
+            items_per_page_label: 'Elementos por página'
             items_per_page_options: '5, 10, 25, 50'
             items_per_page_options_all: false
-            items_per_page_options_all_label: '- All -'
+            items_per_page_options_all_label: '- Todo -'
             offset: false
-            offset_label: Offset
+            offset_label: Desplazamiento
           tags:
-            previous: '‹ Previous'
+            previous: '‹ Anterior'
             next: 'Next ›'
             first: '« First'
             last: 'Last »'
@@ -255,7 +255,7 @@ display:
   feed_1:
     display_plugin: feed
     id: feed_1
-    display_title: Feed
+    display_title: Agregador
     position: 2
     display_options:
       sitename_title: true

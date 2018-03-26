@@ -4,12 +4,13 @@ status: true
 dependencies:
   module:
     - addtoany
+    - system
   theme:
     - newsplus_lite
 id: addtoanybuttons
 theme: newsplus_lite
 region: sidebar_second
-weight: -5
+weight: -8
 provider: null
 plugin: addtoany_block
 settings:
@@ -17,4 +18,9 @@ settings:
   label: Compartir
   provider: addtoany
   label_display: visible
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: "<front>\r\n/admin/*"
+    negate: true
+    context_mapping: {  }

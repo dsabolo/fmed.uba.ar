@@ -1,0 +1,22 @@
+uuid: 5e002be3-ff79-4c6d-843b-c2ad43e23964
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: cartelera
+label: cartelera
+type: 'canonical_entities:node'
+pattern: 'cartelera/[node:title]'
+selection_criteria:
+  7026a603-87c2-4bd5-9888-ca4e71200e2f:
+    id: node_type
+    bundles:
+      publicaciones_cartelera: publicaciones_cartelera
+    negate: false
+    context_mapping:
+      node: node
+    uuid: 7026a603-87c2-4bd5-9888-ca4e71200e2f
+selection_logic: and
+weight: -5
+relationships: {  }

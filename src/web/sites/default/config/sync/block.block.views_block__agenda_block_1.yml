@@ -12,7 +12,7 @@ dependencies:
 id: views_block__agenda_block_1
 theme: newsplus_lite
 region: sidebar_second
-weight: -7
+weight: -12
 provider: null
 plugin: 'views_block:agenda-block_1'
 settings:

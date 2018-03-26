@@ -2,6 +2,8 @@ uuid: fee1166c-91f9-4cde-9223-35d2ed10ca49
 langcode: es
 status: true
 dependencies:
+  module:
+    - system
   theme:
     - newsplus_lite
 _core:
@@ -19,4 +21,9 @@ settings:
   label_display: '0'
   primary: true
   secondary: true
-visibility: {  }
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: true
+    context_mapping: {  }

@@ -1,0 +1,19 @@
+uuid: d60dffd7-a892-48bc-ba50-2f6501122e25
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+    - text
+id: node.field_cuerpo_del_articulo
+field_name: field_cuerpo_del_articulo
+entity_type: node
+type: text_long
+settings: {  }
+module: text
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

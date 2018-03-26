@@ -1,0 +1,11 @@
+extlink_include: ''
+extlink_exclude: '[a-z]\.uba\.ar'
+extlink_alert_text: 'Usted está abandonando el sitio de la Facultad de Medicina de la Universidad de Buenos Aires. Cualquier información que encuentre en el sitio destino no esta vinculada con nuestra institución.'
+extlink_alert: true
+extlink_target: true
+extlink_subdomains: false
+extlink_mailto_class: '0'
+extlink_img_class: false
+extlink_class: '0'
+extlink_css_exclude: ''
+extlink_css_explicit: ''

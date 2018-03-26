@@ -1,0 +1,31 @@
+uuid: 3828ef8b-bc01-49d3-ba73-514afef25022
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:ba59f4b8-acc8-43c8-99b3-1f5e4b5e9157'
+  module:
+    - block_content
+    - system
+  theme:
+    - newsplus_lite
+id: video
+theme: newsplus_lite
+region: r30
+weight: 0
+provider: null
+plugin: 'block_content:ba59f4b8-acc8-43c8-99b3-1f5e4b5e9157'
+settings:
+  id: 'block_content:ba59f4b8-acc8-43c8-99b3-1f5e4b5e9157'
+  label: Video
+  provider: block_content
+  label_display: '0'
+  status: true
+  info: ''
+  view_mode: full
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

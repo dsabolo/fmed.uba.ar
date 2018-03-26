@@ -1,0 +1,30 @@
+uuid: 2d7e574d-8d41-437b-a06f-8565a9bc4374
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.extension
+  module:
+    - system
+    - views
+  theme:
+    - newsplus_lite
+id: views_block__extension_block_1
+theme: newsplus_lite
+region: r70
+weight: 0
+provider: null
+plugin: 'views_block:extension-block_1'
+settings:
+  id: 'views_block:extension-block_1'
+  label: 'Secretaría de Extensión Universitaria'
+  provider: views
+  label_display: visible
+  views_label: 'Secretaría de Extensión Universitaria'
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    pages: '<front>'
+    negate: false
+    context_mapping: {  }

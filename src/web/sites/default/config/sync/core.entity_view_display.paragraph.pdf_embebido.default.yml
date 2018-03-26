@@ -17,6 +17,6 @@ content:
     label: hidden
     settings: {  }
     third_party_settings: {  }
-    type: file_default
+    type: file_url_plain
     region: content
 hidden: {  }

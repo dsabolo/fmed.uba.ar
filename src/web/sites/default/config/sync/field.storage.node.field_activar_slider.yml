@@ -1,0 +1,18 @@
+uuid: daf809f7-f121-47a6-aedd-7e98556b04f5
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+id: node.field_activar_slider
+field_name: field_activar_slider
+entity_type: node
+type: boolean
+settings: {  }
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

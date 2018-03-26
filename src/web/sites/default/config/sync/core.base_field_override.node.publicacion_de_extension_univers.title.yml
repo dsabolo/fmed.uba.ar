@@ -1,0 +1,18 @@
+uuid: 3d2339de-2981-4769-b631-16c2526eb208
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.publicacion_de_extension_univers
+id: node.publicacion_de_extension_univers.title
+field_name: title
+entity_type: node
+bundle: publicacion_de_extension_univers
+label: Título
+description: ''
+required: true
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

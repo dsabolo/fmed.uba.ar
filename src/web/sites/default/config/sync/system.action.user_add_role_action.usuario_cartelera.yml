@@ -1,0 +1,14 @@
+uuid: 7ab54bf6-3a84-420f-9be8-77916bbdb7b0
+langcode: es
+status: true
+dependencies:
+  config:
+    - user.role.usuario_cartelera
+  module:
+    - user
+id: user_add_role_action.usuario_cartelera
+label: 'Add the Usuario Cartelera role to the selected user(s)'
+type: user
+plugin: user_add_role_action
+configuration:
+  rid: usuario_cartelera
