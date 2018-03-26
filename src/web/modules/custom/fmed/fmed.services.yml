@@ -1,0 +1,5 @@
+services:
+    fmed_event_subscriber:
+        class: Drupal\fmed\EventSubscriber\FmedSubscriber
+        tags:
+            - {name: event_subscriber}

@@ -1,0 +1,7 @@
+fmed.content:
+  path: '/fmed_content'
+  defaults:
+    _controller: '\Drupal\fmed\Controller\FmedController::content'
+    _title: 'Mis Contenidos'
+  requirements:
+    _permission: 'Acceder a Administrador de contenidos FMED '

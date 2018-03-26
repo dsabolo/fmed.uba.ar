@@ -1,0 +1,6 @@
+fmed.content:
+  title: 'Administrar Contenidos'
+  description: 'Contenidos de usuario'
+  #parent: system.admin_config_development
+  route_name: fmed.content
+  weight: 100
