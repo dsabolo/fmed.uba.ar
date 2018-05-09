@@ -537,3 +537,7 @@ li.pager__item > a {
 }
 }	
 
+.node-content img {
+  width: 100%;
+  height: auto;
+}
